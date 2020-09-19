@@ -1,0 +1,130 @@
+﻿.foo
+{
+}
+/* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+html, body
+{
+	font: 76% Verdana, sans-serif, Arial;
+}
+blockquote
+{
+	padding: 10px;
+}
+
+
+p, span, label
+{
+	font-size: 8pt;
+}
+h1, h2, h3
+{
+	font-family: verdana,georgia,sans-serif;
+}
+
+a
+{
+	font-size: 8pt;
+}
+a:link, a:visited, a:active
+{
+	color: #6666FF;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #FB000C;
+	background-color: #FFF0F0;
+}
+a[disabled]
+{
+	background-color: Transparent;
+	color: inherit;
+}
+
+input[type="text"], input[type="password"], textarea
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	padding: 2px;
+	border: 1px solid #a9a9a9;
+    }
+
+input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"][disabled], input[type="text"][readonly]:focus, input[type="text"][readonly]:active, input[type="text"][readonly], input[type="text"][disabled]:hover, input[type="text"][readonly]:hover, textarea[disabled], textarea[readonly],  textarea[disabled]:focus, textarea[readonly]:focus,textarea[disabled]:hover, textarea[readonly]:hover, textarea[disabled]:active, textarea[readonly]:active
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	padding: 2px;
+	background-color: #f2f2f2;
+	border: 1px solid #a9a9a9;
+	color: #808080;
+}
+
+select
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	padding: 2px;
+	border: 1px solid #a9a9a9;
+}
+select[disabled]
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	padding: 2px;
+	background-color: #f2f2f2;
+}
+
+input[type="button"], input[type="button"]:active, input[type="submit"], input[type="submit"]:active
+{
+	padding: 2px 4px 4px;
+	font-size: 8pt;
+	color: black;
+	background: url(../image/master/panel-sprite.png) repeat-x 0px -270px;
+	border: 1px solid #666;
+	cursor: pointer;
+	outline:none;
+    margin-top: 0px;
+
+}
+on"][disabled]:active, input[type="button"][disabled], input[type="submit"][disabled]:active, input[type="submit"][disabled]
+{
+	height: 22px;
+	width: auto;
+	padding: 2px 4px 4px;
+	background: url(../image/master/panel-sprite.png) repeat-x 0px -270px;
+	font-size: 8pt;
+	border: 1px solid #666;
+	color: #999999;
+	/*text-shadow: 1px 1px 1px #fff; /* Firefox,Safari,Opera text shadows */
+	cursor: Default;
+	outline:none;
+}
+
+/* Upload Control */
+.upload-textbox
+{
+	float: left;
+	width:500px;
+}
+.upload-container
+{
+	float: left;
+	position: relative;
+	width: /**/ 18px;
+	height: /**/ 20px;
+	overflow: hidden;
+}
+.upload-hidden
+{
+	position: absolute;
+	width:18px;
+	height:18px;
+	right: 0px;
+	top: 0px;
+	/*opacity: 0;*/
+	/*filter: alpha(opacity=0);*/
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}

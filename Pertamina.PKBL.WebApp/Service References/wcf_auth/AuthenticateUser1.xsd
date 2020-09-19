@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Pertamina.Lib" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Pertamina.Lib" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GeneralUserProfile">
+    <xs:sequence>
+      <xs:element name="ApplicationName" nillable="true" type="xs:string" />
+      <xs:element name="mAddress" nillable="true" type="xs:string" />
+      <xs:element name="mAuthObjectValueList" nillable="true" type="tns:ArrayOfGeneralUserAuthObjectValue" />
+      <xs:element name="mCompanyCode" nillable="true" type="xs:string" />
+      <xs:element name="mEmail" nillable="true" type="xs:string" />
+      <xs:element name="mEmployeeNo" nillable="true" type="xs:string" />
+      <xs:element name="mFullName" nillable="true" type="xs:string" />
+      <xs:element name="mIsApproved" type="xs:boolean" />
+      <xs:element name="mIsLockedOut" type="xs:boolean" />
+      <xs:element name="mProfileExist" type="xs:boolean" />
+      <xs:element name="mRemarks" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="mRoleGroupList" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="mRoleGroupNameList" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="mRoleList" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element name="mTelephone" nillable="true" type="xs:string" />
+      <xs:element name="mTitle" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="mUserGroupList" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element name="mUserId" nillable="true" type="xs:string" />
+      <xs:element name="mUserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralUserProfile" nillable="true" type="tns:GeneralUserProfile" />
+  <xs:complexType name="ArrayOfGeneralUserAuthObjectValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralUserAuthObjectValue" nillable="true" type="tns:GeneralUserAuthObjectValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralUserAuthObjectValue" nillable="true" type="tns:ArrayOfGeneralUserAuthObjectValue" />
+  <xs:complexType name="GeneralUserAuthObjectValue">
+    <xs:sequence>
+      <xs:element name="Value1" nillable="true" type="xs:string" />
+      <xs:element name="Value2" nillable="true" type="xs:string" />
+      <xs:element name="mAuthObjectName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="mAuthObjectNameList" nillable="true" type="q5:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralUserAuthObjectValue" nillable="true" type="tns:GeneralUserAuthObjectValue" />
+</xs:schema>

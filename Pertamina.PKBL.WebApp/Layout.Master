@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Pertamina.PKBL.WebApp.Layout" %>
+
+<%@ Register Src="~/MenuControl.ascx" TagPrefix="uc1" TagName="MenuControl" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>PKBL Pertamina</title>
+    <link href="content/images/ptmn.ico" rel="SHORTCUT ICON" />
+
+    <link href="content/web.ui.panel.css" rel="stylesheet" />
+    <link href="content/web.page.forms.css" rel="stylesheet" />
+    <link href="content/web.ui.gridview.css" rel="stylesheet" />
+    <link href="content/web.ui.icon.css" rel="stylesheet" />
+    <link href="content/web.global.reset.css" rel="stylesheet" />
+    <link href="content/web.page.layout.css" rel="stylesheet" />
+    <link href="content/web.html.control.css" rel="stylesheet" />
+    <link href="content/web.ui.css" rel="stylesheet" />
+    <link href="content/web.ui.menu.superfish.css" rel="stylesheet" />
+    <link href="content/web.ui.table.css" rel="stylesheet" />
+    <link href="content/fb-button.css" rel="stylesheet" />
+    <link href="content/Site.css" rel="stylesheet" />
+    
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    <script type="text/javascript" src="<%: ResolveUrl("~/scripts/jquery-1.4.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("/scripts/superfish.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("/scripts/app.js")%>"></script>
+    <script type="text/javascript" src="<%:ResolveUrl("/scripts/master-page-load.js") %>"></script>
+
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="html_header" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+        <div id="html-wrapper">
+            <span id="datetime"></span>
+            <div id="html-header">
+                <div class="master-icon icon-header-logo logo-ptmn-eng">
+                </div>
+                <%--<img id="applogo" src="../content/images/logo-pkbl2.png" alt="Pertamina - TEMPLATE App Logo" />--%>
+                <asp:Image id="applogo" ClientIDMode="Static" ImageUrl="~/content/images/logo-pkbl2.png" runat="server"  />
+            </div>
+            <div>
+            <div id="html-menu">
+<b class="spiffy-rounded"><b class="spiffy-rounded1"></b><b class="spiffy-rounded2"></b><b class="spiffy-rounded3"></b><b class="spiffy-rounded4"></b><b class="spiffy-rounded5"></b></b>
+                <div class="spiffy-roundedfg">
+                    
+<div class="AspNet-Menu-Horizontal" id="ctl00_ASPMainMenu">
+
+    <uc1:MenuControl runat="server" id="MenuControl" />
+
+
+</div>
+                    
+                </div>
+                <div class="spiffy-rounded-bottomfg">
+                </div>
+                <b class="spiffy-rounded-bottom"><b class="spiffy-rounded-bottom5"></b><b class="spiffy-rounded-bottom4"></b><b class="spiffy-rounded-bottom3"></b><b class="spiffy-rounded-bottom2"></b><b
+                    class="spiffy-rounded-bottom1"></b></b>
+
+            </div>
+
+            <div id="html-sub-header">
+                <div class="sub-header-left">
+                    <asp:Label ID="breadcrumbs" runat="server" Text=""></asp:Label>
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="WebSiteMenu"></asp:SiteMapPath>
+                </div>
+                <div class="sub-header-right">
+                    <asp:LoginView ID="LoginUserView" runat="server">
+                        <AnonymousTemplate>
+                            <span class="bold italics">You need to log in before using this application.</span>&nbsp;<span
+                                class="master-icon icon-content-16 icon-16-app-lock"></span>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <span class="master-icon icon-content-16 icon-16-user-loggedin"></span>
+                            <asp:LoginName ID="UserLoggedInName" runat="server" CssClass="bolder" />
+                            &nbsp;|&nbsp;<asp:HyperLink ID="lnk_UserAccount" runat="server" NavigateUrl="#user-account.aspx"></asp:HyperLink>
+                            <a id="lnk_Logout" runat="server" onserverclick="lnk_Logout_ServerClick" CausesValidation ="false" ><span class="master-icon icon-content-16 icon-16-logout"></span>Sign out</a>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        <div id="html-container">
+
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="html-footer">
+                <div class="separator">
+                    <div class="red">
+                    </div>
+                    <div class="green">
+                    </div>
+                    <div class="blue">
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <span class="bolder">Corporate Shared Service</span><br />
+                    Jl. Medan Merdeka Timur No. 1 A Jakarta - 10110 INDONESIA<br />
+                    Gd. Annex, Lantai 1
+                </div>
+                <div class="footer-right">
+                    Copyright &#169; <span class="bolder">PT.Pertamina (Persero)</span> 2016
+                </div>
+        </div>
+                </div>
+        </div>
+    </form>
+        <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+</body>
+</html>

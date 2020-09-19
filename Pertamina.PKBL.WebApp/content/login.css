@@ -1,0 +1,10 @@
+﻿body {background-image:url('../content/images/bg02.jpg');background-size:cover;background-repeat:round;}
+.header-cap-up{font-weight:700;font-size:110%;}
+
+
+#login-wrapper{margin-top:-22px;margin-bottom:30px;margin-left:auto;margin-right:auto;width:89%; min-width:360px;max-width:580px;border:1px solid #99a;padding:9px 12px;background-color:#fdfdfd;}
+#login-box {margin-left:5%; margin-right:5%; margin-top:10px;margin-bottom:13px;}
+
+@media(min-width:768px) {
+    #login-wrapper{margin-top:25px; margin-left:auto;margin-right:auto;width:58%;min-height:390px; min-width:390px; max-width:720px;border:1px solid #99a;background-color:#fdfdfd;}
+}

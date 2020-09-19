@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFUserManagement" />
+  <xs:element name="AuthenticateUserAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFUserManagement" minOccurs="0" name="AuthenticateUserADResult" nillable="true" type="q1:ResponseUsersData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFUserManagement" minOccurs="0" name="AuthADResult" nillable="true" type="q2:ResponseUsersData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

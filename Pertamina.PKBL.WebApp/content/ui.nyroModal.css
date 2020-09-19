@@ -1,0 +1,95 @@
+.nyroModalBg
+{
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.7;
+	z-index: 2001;
+}
+.nmReposition
+{
+	position: absolute;
+}
+.nyroModalCloseButton
+{
+	top: -19px;
+	right: -5px;
+	width: 28px;
+	height: 15px;
+	text-indent: -9999em; /*background: url(../image/nyroModal/nyroClose.png);*/
+	background: url(images/master-sprite.png) no-repeat -171px -210px;
+	z-index: 2003;
+}
+.nyroModalCloseButton:hover
+{
+	background-position: -200px -210px;
+}
+.nyroModalCloseButton:hover
+{
+	background-color: Transparent;
+}
+.nyroModalTitle
+{
+	top: -26px;
+	left: 0;
+	margin: 0;
+	font-size: 1.1em;
+	color: #ddd;
+	z-index: 2002;
+}
+.nyroModalCont
+{
+	position: absolute;
+	border: 4px solid #777;
+	margin: 25px;
+	background: #fff;
+	z-index: 2002;
+}
+.nyroModalCont iframe
+{
+	width: 1000px;
+	height: 750px;
+}
+.nyroModalError
+{
+	border: 4px solid red;
+	color: red;
+	width: 250px;
+	height: 250px;
+}
+.nyroModalError div
+{
+	min-width: 0;
+	min-height: 0;
+	padding: 10px;
+}
+.nyroModalLink, .nyroModalDom, .nyroModalForm, .nyroModalFormFile
+{
+	position: relative;
+	padding: 10px;
+	min-height: 250px;
+	min-width: 250px;
+	max-width: 1000px;
+}
+.nyroModalImage, .nyroModalSwf, .nyroModalIframe, .nyroModalIframeForm
+{
+	position: relative;
+	overflow: hidden;
+}
+.nyroModalHidden
+{
+	left: -9999em;
+	top: -9999em;
+}
+.nyroModalLoad
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #fff url(../image/nyroModal/ajaxLoader.gif') no-repeat center;
+	padding: 0;
+}

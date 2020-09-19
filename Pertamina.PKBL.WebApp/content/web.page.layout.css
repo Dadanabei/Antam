@@ -1,0 +1,347 @@
+﻿/* Layout Tags */
+div#html-wrapper /* Wrapping all contents layout */
+{
+	text-align: left;
+  /*  font-size:11px;*/
+	margin: 0 auto;
+	margin-top: 20px;
+	min-width: 770px;
+	width: 92% !important;
+	width: auto;
+}
+
+div#html-header
+{
+	clear: both;
+	margin: 20px;
+	padding: 0px 0 10px 0;
+	width: 100%;
+	height: 55px;
+	overflow: visible;
+}
+img#applogo /* image on right header */
+{
+	float: right;
+	margin-right: 10px;
+}
+span#datetime
+{
+	font-family: Tahoma, Verdana, Arial;
+	color: #808080;
+	display:block;
+	float: right;
+	padding:3px 8px;
+	margin:-20px 20px -12px 0;
+} 
+
+/* Misc Info on header (below on a Menu) */
+div#html-sub-header
+{
+	clear: both;
+	padding: 5px 0;
+	font-family: Verdana;
+	color: #808080;
+	font-size: 10px;
+	height: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+div#html-sub-header img
+{
+	border: 1px solid;
+}
+div#html-sub-header .sub-header-left
+{
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-left: 14px;
+}
+div#html-sub-header .sub-header-right
+{
+	float: right;
+	text-align: right;
+	margin-right: 8px;
+}
+div#html-sub-header .sub-header-right span
+{
+	vertical-align: top;
+}
+.breadcrumb span
+{
+	padding-right:1px;
+}
+
+div#html-container
+{
+	clear: both;
+	display: block;
+	margin: 0;
+	width: 98%;
+	width: 98% !important;
+	vertical-align: top;
+	padding: 10px;
+	
+}
+/*
+.iconTitle
+{
+     font-family:Verdana;
+font-size:large;
+color:Black;
+font-weight:bold;
+border:none;
+width:3%;
+  float:left;
+    }
+*/
+.title
+{
+   /* width:95%;
+    float:right;*/
+ font-family:Verdana;
+font-size:large;
+color:Black;
+font-weight:bold;
+/*background-image:url('../image/panelgreenwrap.png');
+	background-repeat:repeat-x; */
+	 padding-bottom: 5px;
+	 padding-top:2px;
+/*	border: 1px solid #4daf0a;*/
+	
+}
+
+.subtitle
+{
+    color:#6E6466;
+    font-size:13px;
+	font:  serif;
+	font-weight:bold;
+	font-style:italic;
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+    }
+.contenttext
+{
+    clear: both;
+	display: block;
+	height:auto;
+	font-size:large;
+	
+	padding-top:50px;
+	padding-bottom:25px;
+	margin-top:50px;
+	margin-right:20px;
+	padding-right:20px;
+    }
+   
+ .alert{
+ color:Red;
+ font-weight:bold;
+ 
+ }
+ 
+ .normaltext{
+font-size:11px;
+}
+ .scrollcontainer-left{
+  
+  float:left;
+   
+   margin: 0 auto;
+   height:550px;
+   width:48%;
+ }
+ .scrollcontainer-right{
+   float:right;
+  
+   margin: 0 auto;
+   height:550px;
+   width:48%;
+ }
+.scrollableview{
+   overflow:scroll;
+  /*
+   border-left:1px solid gray;
+   border-right:1px solid gray;
+   border-bottom:1px solid gray;
+*/
+   border:1px solid gray;
+   margin: 0px 0px 10px 0px;
+  
+   height:auto;
+   width:inherit;
+}
+
+.scrollableviewnormal{
+   overflow:scroll;
+  /*
+   border-left:1px solid gray;
+   border-right:1px solid gray;
+   border-bottom:1px solid gray;
+*/
+    border:1px solid gray;
+   margin: 0px 0px 10px 0px;
+  
+   height:200px;
+   width:inherit;
+}
+.miniscrollableview{
+   
+   overflow:scroll;
+   border: 1px solid gray;
+   margin:10px 10px 10px 10px;
+   height:400px;
+  width:inherit;
+}
+#InitialView
+{
+    height:auto;
+    position:inherit;
+    
+    }
+.initialLeft
+{
+    padding:4px;
+   float:left;
+   margin: 0 auto;
+   height:auto;
+   width:48%;
+  
+
+   
+}
+.initialRight
+{
+     padding:4px;
+   float:right;
+   margin: 0 auto;
+   height:auto;
+   width:48%;
+   
+  
+  
+}
+#bottomset
+{
+    margin: 0 auto;
+    position:inherit;
+    width: 100%;
+}
+.ruler
+{
+    height:auto;
+    position:inherit;
+    margin:10px 0px 10px 0px;
+    }
+div#html-footer
+{
+	clear: both;
+	display: block;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #696969;
+	margin-top: 5px;
+	width: 100%;
+}
+div#html-footer span
+{
+	font-family: Verdana;
+	font-size: 10px;
+}
+div.footer-left 
+{
+	float: left;
+	position: relative;
+	text-align: left;
+	margin: 2px 0 10px;
+	padding: 2px 5px;
+	font-family: Verdana;
+	font-size: xx-small;
+	font-weight: normal;	
+}
+div.footer-right 
+{
+	float: right;
+	position: relative;
+	text-align: right;
+	margin: 2px 0 10px;
+	padding: 2px 5px;
+}
+
+/* Footer Lines */
+div.separator
+{
+	width: auto !important;
+	width: 100%;
+	left: 0;
+	padding: 0;
+	margin: auto 0;
+	text-align: left;
+	clear: both;
+	position: relative;
+}
+.separator div
+{
+	height: 1px;
+	line-height: 1px;
+	border: none;
+	border-top: 1px solid;
+	float: left;
+}
+.separator div.red
+{
+	width: 33%;
+	border-color: #FB000C;
+	clear: left;
+}
+.separator div.green
+{
+	width: 34%;
+	border-color: #9EC30F;
+}
+.separator div.blue
+{
+	width: 33%;
+	border-color: #0E4B9D;
+	clear: right;
+}
+/*
+input{
+background-color:#FEE391;
+}
+input:focus
+{
+    border:2px solid red;
+    }
+select {
+background-color:#FEE391;
+}
+*/
+input{
+	background-image: url('images/background_input.gif');
+	margin-left: 0px;
+}
+input:focus
+{
+    border:2px solid red;
+}
+select {
+background-color:#ffffff;
+}
+.mandatory
+{
+  background-image: url('../../App_Themes/image/background_input_mandatory.gif');
+ background-color:#FEE391;   
+    }
+ .errormode
+ {background-image: url('../../App_Themes/image/background_input_error.gif');
+ background-color:Red;  
+     
+     }
+     .default
+     {
+         	background-image: url('images/background_input.gif');
+
+         }

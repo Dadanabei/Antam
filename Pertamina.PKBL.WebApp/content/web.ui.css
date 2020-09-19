@@ -1,0 +1,249 @@
+﻿/*********** Text Styling *************/
+h1, h2, h3
+{
+	font-family: Helvetica, Verdana,Arial, sans-serif;
+}
+h1.title
+{
+	font-size: large;
+	color: black;
+	text-indent: 8px;
+    padding-bottom:5px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+}
+
+span.title
+{
+	/*font-size: 14pt; 	color: #669900; 	text-indent: 8px; 	margin-bottom: 15px; 	letter-spacing: 2px; 	display: block;*/
+	
+	text-align: center;
+	font:verdana large;
+	color: black;
+}
+.sub-title
+{
+	font-family: georgia;
+	font-size: 10pt;
+	color: #C0C0C0;
+	text-indent: 8px;
+}
+.text-normal
+{
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+}
+.text-desc
+{
+	color: #999999;
+	margin-right: 10px;
+}
+.uppercase
+{
+	text-transform: uppercase;
+}
+.lowercase
+{
+	text-transform: lowercase;
+}
+.capital
+{
+	text-transform: capitalize;
+}
+.bold
+{
+	font-weight: bold;
+}
+.bolder
+{
+	font-weight: bolder;
+}
+.italics
+{
+	font-style: italic;
+}
+.center
+{
+	text-align: center;
+}
+span.highlight, label.highlight
+{
+	color: #6699FF;
+}
+
+.currency
+{
+	text-align: right;
+}
+
+/*********** POSITION *************/
+.no-float
+{
+	clear: both;
+	float: none;
+	padding: 4px 0 18px 0;
+	display: block;
+}
+.right-float
+{
+	clear: both;
+	float: right;
+}
+.left-float
+{
+	clear: both;
+	float: left;
+}
+
+/*********** VISUAL *************/
+.hidden-element
+{
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	top: -9999em;
+	left: -9999em;
+	width: 0;
+	height: 0;
+}
+.shadows
+{
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=135,strength=3,Color='#C0C0C0'); /*IE Only*/
+	-moz-box-shadow: 2px 2px 6px #C0C0C0; /* gecko engine only */
+	-webkit-box-shadow: 2px 2px 6px #C0C0C0; /* webkit engine only */
+	box-shadow: 2px 2px 6px #C0C0C0; /* CSS3 (Opera) */
+}
+.corner-all
+{
+	-moz-border-radius: 5px; /* gecko engine only */
+	-webkit-border-radius: 5px; /* webkit engine only */
+	border-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-top
+{
+	-moz-border-radius-topleft: 5px; /* gecko engine only */
+	-webkit-border-top-left-radius: 5px; /* webkit engine only */
+	border-top-left-radius: 5px; /* CSS3 (Opera) */
+	-moz-border-radius-topright: 5px; /* gecko engine only */
+	-webkit-border-top-right-radius: 5px; /* webkit engine only */
+	border-top-right-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-top-left
+{
+	-moz-border-radius-topleft: 5px; /* gecko engine only */
+	-webkit-border-top-left-radius: 5px; /* webkit engine only */
+	border-top-left-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-top-right
+{
+	-moz-border-radius-topright: 5px; /* gecko engine only */
+	-webkit-border-top-right-radius: 5px; /* webkit engine only */
+	border-top-right-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-bottom
+{
+	-moz-border-radius-bottomleft: 5px; /* gecko engine only */
+	-webkit-border-bottom-left-radius: 5px; /* webkit engine only */
+	border-bottom-left-radius: 5px; /* CSS3 (Opera) */
+	-moz-border-radius-bottomright: 5px; /* gecko engine only */
+	-webkit-border-bottom-right-radius: 5px; /* webkit engine only */
+	border-bottom-right-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-bottom-left
+{
+	-moz-border-radius-bottomleft: 5px; /* gecko engine only */
+	-webkit-border-bottom-left-radius: 5px; /* webkit engine only */
+	border-bottom-left-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-bottom-right
+{
+	-moz-border-radius-bottomright: 5px; /* gecko engine only */
+	-webkit-border-bottom-right-radius: 5px; /* webkit engine only */
+	border-bottom-right-radius: 5px; /* CSS3 (Opera) */
+}
+
+
+/*********** UL Styling with Icon *************/
+ul.iconlist, ol.iconlist
+{
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0; /*width: 100%;*/ /* auto width fill parent container */
+}
+ul.iconlist li, ol.iconlist li
+{
+	padding: 8px 8px 8px 10px;
+	font-size: 8pt;
+}
+ul.iconlist b, ol.iconlist b, ul.iconlist a, ol.iconlist a
+{
+	background: url('images/master-sprite.png') no-repeat;
+}
+ul.iconlist b, ol.iconlist b
+{
+	display: inline-block;
+	padding: 0 0 0 5px;
+	width: 7px;
+	height: 7px;
+}
+ul.iconlist b, ol.iconlist b
+{
+	background-position: -4px -89px;
+}
+ul.iconlist b.icon-ok-s, ol.iconlist b.icon-ok-s
+{
+	background-position: -22px -89px;
+}
+ul.iconlist b.icon-error-s, ol.iconlist b.icon-error-s
+{
+	background-position: -40px -89px;
+}
+ul.iconlist b.icon-warn-s, ol.iconlist b.icon-warn-s
+{
+	background-position: -59px -89px;
+}
+ul.iconlist b.icon-info-s, ol.iconlist b.icon-info-s
+{
+	background-position: -76px -89px;
+}
+.list-bg-red
+{
+	border: solid 1px #CC0000;
+	background-color: #f7cbca;
+	color: #CC0000;
+}
+.ul-horizontal-type
+{
+	display: block;
+	width: 110px;
+}
+.ul-horizontal-type li.horizontal-type
+{
+	float: left;
+	position: relative;
+	padding: 4px 2px 0;
+}
+.WaterMarkedTextBox
+    {
+    border-right: #ccccff thin solid;
+    border-top: #ccccff thin solid;
+    border-left: #ccccff thin solid;
+    border-bottom: #ccccff thin solid;
+    color: gray;
+    display: inline;
+    background: AliceBlue;
+    visibility: visible;
+    text-decoration:line-through;
+    }
+    .NormalTextBox
+    {
+    border-right: #ccccff thin solid;
+    border-top: #ccccff thin solid;
+    border-left: #ccccff thin solid;
+    border-bottom: #ccccff thin solid;
+    color: black;
+    display: inline;
+    background: #ffffff;
+    visibility: visible;
+    }

@@ -1,0 +1,143 @@
+﻿Tugas Hari Ini (senin, 19 September 2016)
+{
+	
+
+
+		X- penambahan BL kota / kabupaten ditambah keterangan kota/kabupaten, dikelomokan berdasasr provinsi
+
+
+		penyaluran BL
+
+		X- tambah akun accrual, 
+		X- panjar dilawan akun (sistem lama belum)
+		V- nama kepada belum muncul
+
+		report realisasi BL
+
+		?-nilai penyaluran harus sesuai dengan yang di posting
+
+		penerimaan proposal PK 
+		V- ayah ibu wajib
+
+		detail proposal PK
+		V- kurang bintang di lahan tempat usaha
+
+		penilaian PK 
+		V- nilai yang disetujui free text
+
+		realisasi PK
+		V- denda tdk mandatory
+
+
+
+
+	Top Priority
+	{
+	}
+	Normal Priority
+	{
+		
+		(V) Nilai Pengajuan Maks 75 juta, validasi di persetujuan---Adan
+		(V) Penilaian survey, no telpon dan bidang usaha belum ada isinya ,coba cek lagi---Adan
+		(V) persetujuan survey, nominalnya pake format currency.---Adan
+		(V) Detail persetujuan survey, jenis kredit dan currency nya---Adan
+		(V) Keputusan diganti jadi disetujui dan ditolak---Adan
+		(V) no persetujuan belum masuk.---Check Lagi
+		(V) Cabang dan user log belum masuk, alamat usaha dari proposal datausaha, jkr,jdb, dan jsu dari awal proposal---Adan
+
+		(V) Realisasi persetujuan tambah, pinjaman ke defaultnya 1---Adan
+		(V) Jenis Usaha diambil dari data usaha yang bidang usaha.---Adan
+		(V) display tgl mulai bayar masih kacau---Adan
+		(V) Model pembayaran itu pokok + bunga---Adan
+
+		(V) Detail Akad Kredit, daftar mitranya masih ngawur---Adan
+		--() Cetak Surat Perjanjian>>on progress---Maldini
+		(?) Jadwal Pembayaran masking currency---Adan
+		(?) icon print yang usless di basmi aja---Adan
+		(V) pencairanPK icon opr nya beda setelah dan sebelum dicairkan---Adan
+		() print jurnal kasbank, ambil dari verifikator tiap2 cabang---Adan
+		(V) Jurnal insert tambah verifikator dll---Adan
+		(V) PembayaranPK, alamat adalah alamat requestornya bukan usahanya--Adan
+		() Laporan realisasi statusnya harusnya ga ada, cuma menampilkan data yang udah dicairkan aja--Adan
+		(V) Persetujuan statusnya diganti jadi disetujui---Adan
+		(V) Reporting Bagan Akun harus bisa report excel dan bisa di klik kalau ada saldonya---??
+
+	}
+	Low Priority
+	{
+		
+	}
+
+	ask
+	{
+		- dari data xlx ada kota yang punya branch code lebih dari satu dengan kode yang sama dan dengan provinsi yang sama
+	}
+
+}
+
+
+Catatan
+{
+
+	lawan akun pembayaranPK {
+
+		'11.36' yang 11, 22 ,22 lawan akun
+
+		42.11x(sektor)0 bunga
+
+		21.61x(sektor)0 advance
+	
+	}
+
+	cara make bll jurnal
+	{
+	    JurnalBll bll = new JurnalBll();
+
+        var detail = bll.DetailTable;
+
+        var newrow = detail.NewRow();
+        newrow[0] = "11.1211.1103";
+        newrow[1] = 0;
+        newrow[2] = 50000000;
+        newrow[3] = "catatan";
+
+        detail.Rows.Add(newrow);
+
+        newrow = detail.NewRow();
+        newrow[0] = "11.1213.1101";
+        newrow[1] = 0;
+        newrow[2] = 50000000;
+        newrow[3] = "uyeee";
+
+        detail.Rows.Add(newrow);
+
+        newrow = detail.NewRow();
+        newrow[0] = "52.1020.0000";
+        newrow[1] = 100000000;//debet
+        newrow[2] = 0;//kredit
+        newrow[3] = "uyeee";
+
+        detail.Rows.Add(newrow);
+
+        System.Collections.Hashtable ht = new System.Collections.Hashtable();
+
+        ht.Add("@details-structured",detail);
+        ht.Add("@KodeCabang-smallint",1100);
+        ht.Add("@TglBukti-varchar-20","21/08/2016");
+        ht.Add("@KetBayar-nvarchar-1000","catatan");
+        ht.Add("@NilaiJumlah-float",100000000);
+        ht.Add("@CreatedBy-nvarchar-50","admin");
+        ht.Add("@Noref-varchar-40","JU");//
+
+        if(bll.InsertJurnal(ht))
+		{
+			//aaction sukses
+		}
+		else
+		{
+			//action nggak balance
+		}
+	}
+
+}
+

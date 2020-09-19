@@ -1,0 +1,124 @@
+﻿/* Layout Tags */
+div#html-wrapper /* Wrapping all contents layout */
+{
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 92% !important;
+	width: auto;
+}
+div#html-header-popup
+{
+	clear: both;
+	margin: 0;
+	padding: 0 0 10px 0;
+	width: 100%;
+	height: 30px;
+	overflow: visible;
+}
+img#app-logo /* image on right header */
+{
+	float: right;
+	margin-right: 10px;
+    
+}
+span#datetime
+{
+	font-family: Tahoma, Verdana, Arial;
+	color: #808080;
+	display:block;
+	float: right;
+	padding:3px 8px;
+	margin:-20px 20px -12px 0;
+} 
+.title{
+ font-family:Verdana;
+font-size:medium;
+color:Black;
+font-weight:bold;
+
+}
+div#html-container
+{
+	clear: both;
+	display: block;
+	margin: 0;
+	width: 98%;
+	width: 98% !important;
+	vertical-align: top;
+	padding: 10px;
+	/*zoom: 1;*/
+}
+div#html-footer
+{
+	clear: both;
+	display: block;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #696969;
+	margin-top: 5px;
+	width: 100%;
+}
+div#html-footer span
+{
+	font-family: Verdana;
+	font-size: 10px;
+}
+div.footer-left 
+{
+	float: left;
+	position: relative;
+	text-align: left;
+	margin: 2px 0 10px;
+	padding: 2px 5px;
+	font-family: Verdana;
+	font-size: xx-small;
+	font-weight: normal;	
+}
+div.footer-right 
+{
+	float: right;
+	position: relative;
+	text-align: right;
+	margin: 2px 0 10px;
+	padding: 2px 5px;
+}
+
+/* Footer Lines */
+div.separator
+{
+	width: auto !important;
+	width: 100%;
+	left: 0;
+	padding: 0;
+	margin: auto 0;
+	text-align: left;
+	clear: both;
+	position: relative;
+}
+.separator div
+{
+	height: 1px;
+	line-height: 1px;
+	border: none;
+	border-top: 1px solid;
+	float: left;
+}
+.separator div.red
+{
+	width: 33%;
+	border-color: #FB000C;
+	clear: left;
+}
+.separator div.green
+{
+	width: 34%;
+	border-color: #9EC30F;
+}
+.separator div.blue
+{
+	width: 33%;
+	border-color: #0E4B9D;
+	clear: right;
+}

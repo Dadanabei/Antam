@@ -1,0 +1,7 @@
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\bin\Debug\Pertamina.PKBL.BLL.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\bin\Debug\Pertamina.PKBL.BLL.pdb
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\bin\Debug\Pertamina.PKBL.DAL.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\bin\Debug\Pertamina.PKBL.DAL.pdb
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\obj\Debug\Pertamina.PKBL.BLL.csprojResolveAssemblyReference.cache
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\obj\Debug\Pertamina.PKBL.BLL.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.BLL\obj\Debug\Pertamina.PKBL.BLL.pdb

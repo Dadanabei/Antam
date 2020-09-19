@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B61B6DC-1798-43F4-A27A-FE8EEA887737}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pertamina.PKBL.BLL</RootNamespace>
+    <AssemblyName>Pertamina.PKBL.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityLogBll.cs" />
+    <Compile Include="Administer\CityIndexBll.cs" />
+    <Compile Include="Administer\ClosingBll.cs" />
+    <Compile Include="Administer\DownloadMasterBll.cs" />
+    <Compile Include="Administer\MasterKantorCabangBll.cs" />
+    <Compile Include="Administer\ProvinceIndexBll.cs" />
+    <Compile Include="Administer\TemplateBll.cs" />
+    <Compile Include="Administer\VerifikasiBll.cs" />
+    <Compile Include="Akuntansi\AccIndexBll.cs" />
+    <Compile Include="Akuntansi\DetailPencairanPKBll.cs" />
+    <Compile Include="Akuntansi\DetailPenyaluranHibahBll.cs" />
+    <Compile Include="Akuntansi\DiskonJasaBll.cs" />
+    <Compile Include="Akuntansi\JurnalBll.cs" />
+    <Compile Include="Akuntansi\KartuPiutangBll.cs" />
+    <Compile Include="Akuntansi\KartuPiutangDetailBll.cs" />
+    <Compile Include="Akuntansi\MappingBankCoaBll.cs" />
+    <Compile Include="Akuntansi\MappingCabangProvinsiBll.cs" />
+    <Compile Include="Akuntansi\MappingCoaJenisBinalingBll.cs" />
+    <Compile Include="Akuntansi\MappingKotaAcBll.cs" />
+    <Compile Include="Akuntansi\PanjarBll.cs" />
+    <Compile Include="Akuntansi\PembayaranPKBll.cs" />
+    <Compile Include="Akuntansi\PengakuanMitraBermasalahBll.cs" />
+    <Compile Include="Akuntansi\PengembalianKelebihanBll.cs" />
+    <Compile Include="Akuntansi\PenyaluranBLDetailBll.cs" />
+    <Compile Include="Akuntansi\PenyaluranBll.cs" />
+    <Compile Include="Akuntansi\TransferDanaBankBll.cs" />
+    <Compile Include="Akuntansi\UploadPembayaranKemitraanBll.cs" />
+    <Compile Include="BinaLingk\CheckListBll.cs" />
+    <Compile Include="BinaLingk\MasterBLBll.cs" />
+    <Compile Include="BinaLingk\PenilaianBll.cs" />
+    <Compile Include="BinaLingk\PermohonanBll.cs" />
+    <Compile Include="BinaLingk\PersetujuanBll.cs" />
+    <Compile Include="BinaLingk\UploadPenyaluranBLBll.cs" />
+    <Compile Include="DdlBll.cs" />
+    <Compile Include="Hibah\PengajuanHibahBll.cs" />
+    <Compile Include="Hibah\PenyaluranHibahBll.cs" />
+    <Compile Include="Hibah\PersetujuanHibahBll.cs" />
+    <Compile Include="Kemitraan\DetailJadwalPembayaraBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\AdministrasiBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\BidangUsahaBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\ChecklistBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\DataAgunanBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\DataPenjaminBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\DataPribadiBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\DataUsahaBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\FilesBll.cs" />
+    <Compile Include="Kemitraan\DetailPenerimaanProposal\HasilInventarisasiBll.cs" />
+    <Compile Include="Kemitraan\DetailPenilaianProposalBll.cs" />
+    <Compile Include="Kemitraan\DetailReschedulePiutangKemitraanBll.cs" />
+    <Compile Include="Kemitraan\JadwalPembayaranBll.cs" />
+    <Compile Include="Kemitraan\MasterKreditKemitraanBll.cs" />
+    <Compile Include="Kemitraan\MasterSektorKemitraanBll.cs" />
+    <Compile Include="Kemitraan\MonitoringMitraBll.cs" />
+    <Compile Include="Kemitraan\PencairanBll.cs" />
+    <Compile Include="Kemitraan\PenerimaanProposalBll.cs" />
+    <Compile Include="Kemitraan\PenilaianProposalBll.cs" />
+    <Compile Include="Kemitraan\PerhitunganBungaPinjamanBll.cs" />
+    <Compile Include="Kemitraan\PersetujuanProposalBll.cs" />
+    <Compile Include="Kemitraan\RealisasiBll.cs" />
+    <Compile Include="Kemitraan\ReschedulePiutangKemitraanBll.cs" />
+    <Compile Include="Kemitraan\SinergiBUMNBll.cs" />
+    <Compile Include="Kemitraan\UploadRealisasiKemitraanBll.cs" />
+    <Compile Include="Kemitraan\VerifikatorBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\RepAkuntansiBll.cs" />
+    <Compile Include="Reporting\RepBinalingBll.cs" />
+    <Compile Include="Reporting\RepHibahBll.cs" />
+    <Compile Include="Reporting\RepKemitraanBll.cs" />
+    <Compile Include="Reporting\ReportLainBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pertamina.PKBL.DAL\Pertamina.PKBL.DAL.csproj">
+      <Project>{2878f533-6d42-429e-8e34-a96f76a9c0ac}</Project>
+      <Name>Pertamina.PKBL.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

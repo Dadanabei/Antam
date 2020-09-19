@@ -1,0 +1,13 @@
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.WebApp.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.WebApp.pdb
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.BLL.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.DAL.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.BLL.pdb
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\bin\Pertamina.PKBL.DAL.pdb
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.csprojResolveAssemblyReference.cache
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.Reporting.RepBinaLingRealisasi.resources
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.Reporting.RepBinaLingUsulan.resources
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.csproj.GenerateResource.Cache
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.dll.licenses
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.dll
+D:\PTM\BugFix\Sourche\WEB_PKBL\East\Pertamina.PKBL.WebApp\obj\Debug\Pertamina.PKBL.WebApp.pdb

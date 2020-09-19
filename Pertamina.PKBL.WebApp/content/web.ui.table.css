@@ -1,0 +1,347 @@
+﻿
+
+/*table.ui-table
+{
+	width: 90%;
+	border-top: 1px solid #e5eff8;
+	border-right: 1px solid #e5eff8;
+	margin: 1em auto;
+	border-collapse: collapse;
+}
+table.ui-table caption
+{
+	color: #9ba9b4;
+	font-size: .94em;
+	letter-spacing: .1em;
+	margin: 1em 0 0 0;
+	padding: 5px 0 10px 0;
+	caption-side: top;
+	text-align: center;
+}
+table.ui-table caption.title
+{
+	color: #33CC33;
+	font-size: 100%;
+	letter-spacing: .1em;
+	margin: 1em 0 0 0;
+	padding: 5px 0;
+	caption-side: top;
+	text-align: center;
+}
+table.ui-table tr.odd td
+{
+	background: #f7fbff;
+}
+table.ui-table tr.odd .col
+{
+	background: #f4f9fe;
+}
+table.ui-table .col
+{
+	background: #f9fcfe;
+}
+table.ui-table td
+{
+	color: #678197;
+	border-bottom: 1px solid #e5eff8;
+	border-left: 1px solid #e5eff8;
+	padding: 0.5em;
+}
+table.ui-table th
+{
+	font-weight: normal;
+	color: #678197;
+	text-align: left;
+	border-bottom: 1px solid #e5eff8;
+	border-left: 1px solid #e5eff8;
+	padding: .3em 1em;
+}
+table.ui-table thead th
+{
+	background: #f4f9fe;
+	text-align: center;
+	font: bold 1.2em/2em "Century Gothic" , "Trebuchet MS" ,Arial,Helvetica,sans-serif;
+	color: #66a3d3;
+}
+table.ui-table tbody em
+{
+	color: #3399FF;
+	font-size: 1.1em;
+	font-style: normal;
+}
+table.ui-table tfoot tr
+{
+	font-style: normal;
+	background: #f4f9fe;
+	font-size: 16pt;
+	margin: .5em .5em .5em 0;
+}
+table.ui-table tfoot td.title span
+{
+	font-weight: bolder;
+	font-size: .85em;
+}
+table.ui-table tfoot em span
+{
+	font: bold 2.2em "Century Gothic" , "Trebuchet MS" ,Arial,Helvetica,sans-serif;
+	font-size: .75em;
+	font-weight: bold;
+}
+.ui-table-text-normal
+{
+	color: #66a3d3;
+}
+.ui-table-text-ok
+{
+	color: #33CC33;
+}
+.ui-table-text-failed
+{
+	color: #f03b58;
+}
+*/
+.tabs-toolbox
+{
+	/*margin-left: -1px; 	margin-right: -1px; 	margin-bottom: -1px; 	background-color: #A6C9E2;*/
+	padding: 8px;
+	border: 1px solid #75ABD2;
+	background-color: #6FA7D1;
+}
+.panelbutton
+{
+	/*margin-left: -1px; 	margin-right: -1px; 	margin-bottom: -1px; 	background-color: #A6C9E2;*/
+	padding: 2px;
+	border: 1px solid #4daf0a;
+	background-image: url('../image/panelgreenwrap.png');
+	background-repeat:repeat-x;
+	box-shadow:3px 3px 3px #ccc;
+}
+.orangepanel
+{
+    padding: 2px;
+	border: 1px solid #d99206;
+	background-image: url('../image/panelorangewrap.png');
+	background-repeat:repeat-x;
+	
+    
+    }
+ .hintfl
+ {
+   position:absolute;
+   border:1px solid #88a23a;
+   height:auto;
+   width:500px;
+   margin-left:600px;
+   margin-top:180px;
+   background-color:#add141;
+   font-size:11px;
+   padding:5px 5px 5px 5px;
+     
+     }
+ /*    .image
+    {
+    padding: 5px;
+    border-top:none;
+	border-left: 1px solid #4daf0a;
+		border-bottom: 1px solid #4daf0a;
+			border-right: 1px solid #4daf0a;*/
+    /*background-image:url('../image/panelgreenwrap.png');*/
+/*	background-repeat:repeat-x; 
+        }
+*/
+ .defaultCursor
+ {
+     cursor:default;
+     }
+ .clickable
+ {
+      cursor:pointer;
+     }
+     
+.gvInfo
+{
+	box-shadow:2px 2px 2px #ccc;
+	padding: 3px;
+	border: 1px solid gray;
+    table-layout:fixed;
+}
+.gvinfo-content
+{
+    /*text-align: center;*/
+    vertical-align: top;
+    background-color: #ffffff;
+    
+}
+
+/*
+SAMPLE :
+<table summary="Webhosting products overview showing all available packages, what's included and what the monthly cost is with an option to order">
+	<caption>Company X webhosting products overview</caption>
+	<thead>
+	<tr class="odd">
+
+		<td class="column1"></td>
+		<th scope="col" abbr="Home">Webhosting Home</th>
+		<th scope="col" abbr="Home Plus">Webhosting Home Plus</th>	
+		<th scope="col" abbr="Business">Webhosting Business</th>
+		<th scope="col" abbr="Business Plus">Webhosting Business Plus</th>
+	</tr>	
+	</thead>
+    <tfoot>	
+ 	<tr class="odd">
+		<td class="column1">&nbsp;</td>
+		<th scope="col"><strong>Webhosting Home</strong><br /><em>€ 4,95</em>/ month<br />
+		<a href="#" title="Bestel Web Hosting Home"><img src="images/b-order.gif" alt="order now" width="73" height="21" /></a></th>
+		<th scope="col"><strong>Webhosting Home Plus</strong><br /><em>€ 9,95 </em>/ month<br />
+		<a href="#" title="Bestel Web Hosting Home Plus"><img src="images/b-order.gif" alt="order now" width="73" height="21" /></a></th>
+		<th scope="col"><strong>Webhosting Business</strong><br /><em>€14,95</em> / month<br />
+
+		<a href="#" title="Bestel Web Hosting Business"><img src="images/b-order.gif" alt="order now" width="73" height="21" /></a></th>
+		<th scope="col"><strong>Webhosting Business Plus</strong><br /><em>€ 19,95</em> / month<br />
+		<a href="#" title="Bestel Web Hosting Business Plus"><img src="images/b-order.gif" alt="order now" width="73" height="21" /></a></th>
+	</tr>	
+	</tfoot>
+	<tbody>
+ 	<tr>
+
+		<th scope="row" class="column1">Data usage</th>
+		<td>1 GB per month</td>
+		<td>2 GB per month</td>
+		<td>5 GB per month</td>
+		<td>10 GB per month</td>
+	</tr>	
+ 	 <tr class="odd">
+
+		<th scope="row" class="column1">Opslag Capaciteit</th>
+		<td>100 MB	</td>
+		<td>250 MB</td>
+		<td>500 MB</td>
+		<td>1 GB</td>
+	</tr>	
+ 	<tr>
+
+		<th scope="row" class="column1">MySQL Databases</th>	
+		<td>1</td>
+		<td>2</td>
+		<td>5</td>
+		<td>10</td>
+	</tr>	
+ 	<tr class="odd">
+
+		<th scope="row" class="column1">Email Boxes</th>
+		<td>5</td>
+		<td>10</td>
+		<td>25</td>
+		<td>50</td>
+	</tr>	
+ 	<tr>
+
+		<th scope="row" class="column1">Email Addresses</th>
+		<td>Unlimited</td>
+		<td>Unlimited</td>
+		<td>Unlimited</td>
+		<td>Unlimited</td>
+	</tr>	
+ 	<tr class="odd">
+
+		<th scope="row" class="column1">Spam and Virus filter</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr>
+		<th scope="row" class="column1">Mailinglists</th>
+
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr class="odd">
+		<th scope="row" class="column1">Autoresponders</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr>
+		<th scope="row" class="column1">PHP Supportg</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+
+	</tr>	
+ 	<tr class="odd">
+		<th scope="row" class="column1">CGI Support</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr>
+
+		<th scope="row" class="column1">SSL Support</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>
+ 	<tr class="odd">
+		<th scope="row" class="column1">DNS Management</th>
+
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr>
+		<th scope="row" class="column1">Error Documents</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>	
+ 	<tr class="odd">
+		<th scope="row" class="column1">Secure Folders</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+
+	</tr>	
+ 	<tr>
+		<th scope="row" class="column1">Statistics</th>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+		<td><img src="images/icon-check.gif" alt="included" width="16" height="16" /></td>
+	</tr>
+	</tbody>
+
+</table>
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

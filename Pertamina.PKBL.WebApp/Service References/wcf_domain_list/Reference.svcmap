@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f9918240-3d70-4474-ad34-2a0e0c8879a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetAllDomain.xsd" MetadataType="Schema" ID="9f5415c6-e045-4934-9dca-43cbed25b9e8" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetAllDomain1.xsd" MetadataType="Schema" ID="7b693ebf-2d11-4cd2-83a9-f7db130ed992" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetAllDomain.disco" MetadataType="Disco" ID="edee339b-4e61-4d36-8f6d-57b292412887" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc?disco" />
+    <MetadataFile FileName="GetAllDomain2.xsd" MetadataType="Schema" ID="4403b30b-c0d4-433a-8298-f3c897925e1b" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc?xsd=xsd0" />
+    <MetadataFile FileName="GetAllDomain.wsdl" MetadataType="Wsdl" ID="43be92e8-b532-4262-aa57-5c3e2d41480b" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/GetAllDomain.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

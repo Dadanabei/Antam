@@ -1,0 +1,315 @@
+﻿div.web-panel
+{
+	font: 75% Verdana, Tahoma, Arial;
+	position: relative;
+	clear: both;
+	left: 0px;
+	margin: 4px 0px 10px 0px;
+	text-align: left;
+	background-color: #fff;
+}
+div.web-panel .panel-content
+{
+	border: 1px solid #c0c0c0;
+	border-top: none;
+}
+div.web-panel .panel-content .no-border
+{
+	border: none;
+}
+
+
+/*===== WEB PANEL TITLE =====*/
+.panel-title
+{
+	padding: 6px 5px 6px 8px;
+	vertical-align: middle;
+	line-height: 30px;
+	background: url(../image/master/panel-sprite.png) no-repeat -9999em -9999em;
+}
+.panel-ptmn-green .panel-title
+{
+	border: solid 1px #349534;
+	background-repeat: repeat-x;
+	background-position: 0 -30px;
+}
+.panel-ptmn-red .panel-title
+{
+	border: solid 1px #CC0000;
+	background-repeat: repeat-x;
+	background-position: 0 -90px;
+}
+.panel-ptmn-blue .panel-title
+{
+	border: 1px solid #11398E;
+	background-repeat: repeat-x;
+	background-position: 0 -150px;
+}
+
+.panel-green .panel-title, .panel-success .panel-title
+{
+	border: solid 1px #349534;
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+.panel-red .panel-title, .panel-error .panel-title
+{
+	border: solid 1px #DE0E0E;
+	background-repeat: repeat-x;
+	background-position: 0 -60px;
+}
+.panel-blue .panel-title, .panel-information .panel-title
+{
+	border: 1px solid #0058B0;
+	background-repeat: repeat-x;
+	background-position: 0 -120px;
+}
+.panel-yellow .panel-title, .panel-warning .panel-title
+{
+	border: 1px solid #E29607;
+	background-repeat: repeat-x;
+	background-position: 0 -180px;
+}
+.panel-silver .panel-title
+{
+	border: 1px solid #8FA2C0;
+	background-repeat: repeat-x;
+	background-position: 0 -240px;
+}
+.panel-gray .panel-title
+{
+	border: 1px solid #999999;
+	background-repeat: repeat-x;
+	background-position: 0 -210px;
+}
+
+/*===== WEB PANEL TITLE TEXT=====*/
+.panel-title h1
+{
+	font: 10pt Georgia,Verdana, Tahoma, Arial;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding: 0 0 0 24px;
+	letter-spacing: 2pt; /* text overflow */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.panel-ptmn-green h1
+{
+	color: #007900;
+}
+.panel-ptmn-red h1
+{
+	color: #FFD5D5;
+}
+.panel-ptmn-blue h1
+{
+	color: #CCE4F9;
+}
+.panel-green h1, .panel-success h1
+{
+	color: #007500;
+}
+.panel-red h1, .panel-error h1
+{
+	color: #993300;
+}
+.panel-blue h1, .panel-information h1
+{
+	color: #002DB3;
+}
+.panel-yellow h1, .panel-warning h1
+{
+	color: #B96F00;
+}
+.panel-silver h1
+{
+	color: #5670A5;
+}
+.panel-gray h1
+{
+	color: #666666;
+}
+/*===== WEB PANEL CONTENT =====*/
+.panel-content
+{
+	display: block;
+	font-size: 8pt;
+	padding: 14px;
+	position: relative;
+	overflow: auto;
+}
+
+/*===== TOOLBOX  =====*/
+.panel-icon, .panel-title a
+{
+	width: 16px;
+	height: 16px;
+	background: url(images/master-sprite.png) no-repeat -9999em -9999em;
+	position: absolute;
+	margin-right: 16px;
+}
+.panel-title a
+{
+	top: 7px;
+	position: absolute;
+	outline: 0;
+	display: inline-block;
+	padding: 18px 0 0 0;
+	height: 0px !important;
+	cursor: pointer;
+}
+
+/*===== WEB PANEL AS MESSAGE BOX =====*/
+.panel-success .panel-icon
+{
+	background-position: 0 0;
+}
+.panel-error .panel-icon
+{
+	background-position: -18px 0;
+}
+.panel-warning .panel-icon
+{
+	background-position: -36px 0;
+}
+.panel-information .panel-icon
+{
+	background-position: -54px 0;
+}
+
+
+.panel-success .panel-content
+{
+	background-color: #C9FFCA;
+	color: #008000;
+}
+.panel-error .panel-content
+{
+	border: solid 1px #CC0000;
+	background-color: #f7cbca;
+	color: #CC0000;
+}
+.panel-warning .panel-content
+{
+	border: solid 1px #DEDEDE;
+	background-color: #FFFFCC;
+	color: #666;
+}
+.panel-information .panel-content
+{
+	border: 1px solid #6699FF;
+	background-color: #ACD5FD;
+	color: #3366CC;
+}
+
+.panel-title a.panel-close
+{
+	right: -12px;
+	background-position: -129px -36px;
+	height: /**/ 18px;
+	width: /**/ 30px;
+}
+.panel-title a.panel-collapse
+{
+	right: 13px;
+	background-position: -36px -36px;
+	height: /**/ 18px;
+	width: /**/ 22px;
+}
+.panel-title a.panel-expand
+{
+	right: 13px;
+	background-position: -54px -36px;
+	height: /**/ 18px;
+	width: /**/ 22px;
+}
+
+/*===== WEB PANEL MESSAGE LIST =====*/
+.panel-content ul
+{
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.panel-content li
+{
+	padding-left: 20px;
+	margin-bottom: 8px;
+}
+.panel-content li span
+{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	padding: 0 0 0 10px;
+	margin: 0 0 0 -16px;
+	background: url(images/master-sprite.png) no-repeat -9999em -9999em;
+}
+li span.icon-small-new
+{
+	background-position: -77px -5px;
+}
+li span.icon-small-success
+{
+	background-position: -95px -5px;
+}
+li span.icon-small-invalid
+{
+	background-position: -113px -5px;
+}
+li span.icon-small-warn
+{
+	background-position: -132px -5px;
+}
+li span.icon-small-info
+{
+	background-position: -149px -5px;
+}
+
+
+/*===== Ovverride Corner ====*/
+.corner-all .panel-title, .corner-top .panel-title
+{
+	-moz-border-radius-topleft: 5px; /* gecko engine only */
+	-webkit-border-top-left-radius: 5px; /* webkit engine only */
+	border-top-left-radius: 5px; /* CSS3 (Opera) */
+	-moz-border-radius-topright: 5px; /* gecko engine only */
+	-webkit-border-top-right-radius: 5px; /* webkit engine only */
+	border-top-right-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-top-left .panel-title
+{
+	-moz-border-radius-topleft: 5px; /* gecko engine only */
+	-webkit-border-top-left-radius: 5px; /* webkit engine only */
+	border-top-left-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-top-right .panel-title
+{
+	-moz-border-radius-topright: 5px; /* gecko engine only */
+	-webkit-border-top-right-radius: 5px; /* webkit engine only */
+	border-top-right-radius: 5px; /* CSS3 (Opera) */
+}
+
+.corner-all .panel-content, .corner-bottom .panel-content
+{
+	-moz-border-radius-bottomleft: 5px; /* gecko engine only */
+	-webkit-border-bottom-left-radius: 5px; /* webkit engine only */
+	border-bottom-left-radius: 5px; /* CSS3 (Opera) */
+	-moz-border-radius-bottomright: 5px; /* gecko engine only */
+	-webkit-border-bottom-right-radius: 5px; /* webkit engine only */
+	border-bottom-right-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-bottom-left .panel-content
+{
+	-moz-border-radius-bottomleft: 5px; /* gecko engine only */
+	-webkit-border-bottom-left-radius: 5px; /* webkit engine only */
+	border-bottom-left-radius: 5px; /* CSS3 (Opera) */
+}
+.corner-bottom-right .panel-content
+{
+	-moz-border-radius-bottomright: 5px; /* gecko engine only */
+	-webkit-border-bottom-right-radius: 5px; /* webkit engine only */
+	border-bottom-right-radius: 5px; /* CSS3 (Opera) */
+}

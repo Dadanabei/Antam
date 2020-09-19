@@ -1,0 +1,159 @@
+﻿/* Centering DIV Vertical & Horizontal */
+#outer
+{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#outer[id]
+{
+	display: table;
+	position: static;
+}
+/* for explorer only*/
+#middle
+{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+#middle[id]
+{
+	display: table-cell;
+	vertical-align: middle;
+	position: static;
+}
+/* for explorer only */
+#inner
+{
+	position: relative;
+	top: -50%;
+	text-align: left;
+}
+/* optional (work in IE7 too) */
+#inner[id]
+{
+	position: static;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*---------------*/
+.AspNet-Login
+{
+	margin: 20px;
+	padding: 10px 20px;
+	width: 400px;
+	font-family: Verdana;
+	font-size: 8pt;
+}
+.AspNet-Login ol
+{
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.AspNet-Login li
+{
+	padding: 4px;
+}
+.AspNet-Login label
+{
+	float: left;
+	width: 100px;
+	text-align: right;
+	margin-right: 7px;
+	line-height: 19px; /* This will make the labels vertically centered with the inputs */
+}
+
+.AspNet-Login input[type="text"], .AspNet-Login input[type="password"]
+{
+	padding: 2px;
+	border: 1px solid #a9a9a9;
+	width: 150px;
+	/*background-color: #FFFFCC;*/
+}
+
+/*.AspNet-Login input[type="text"]:focus, .AspNet-Login input[type="password"]:focus
+{
+	background-color: #FFFF99;
+}*/
+
+.AspNet-Login input[type="submit"], .AspNet-Login input[type="button"]
+{
+	width: 100px;
+	margin-left: 107px; /* Total width of the labels + their right margin */
+	cursor: pointer;
+}
+
+div.web-panel .login-failure
+{
+	display:block;
+	margin:0;
+	position:relative;
+}
+.login-failure ul
+{
+	margin: 0;
+	padding: 0;
+}
+.login-failure ul li
+{
+	padding:8px;
+}
+.login-failure ul li b
+{
+	background-position: -40px -89px;
+}
+.list-bg-red
+{
+	border-top:none;
+}
+
+/* Support Browser List Icon (reference with web.ui.css '.ul-horizontal-type & li.horizontal-type') */
+.icon-browser-support
+{
+	width: 84px;
+	height: 16px;
+	/*background-position: -129px -16px;*/
+	right: 5px;
+}
+li.horizontal-type a.browser
+{
+	display: inline-block;
+	padding: 0 0 0 4px;
+	width: /* */ 14px;
+	height: /* */ 16px;
+}
+li.horizontal-type a.ie
+{
+	background-position: 0 -65px;
+}
+li.horizontal-type a.ff
+{
+	background-position: -21px -65px;
+}
+li.horizontal-type a.chrome
+{
+	background-position: -41px -65px;
+}
+li.horizontal-type a.opera
+{
+	background-position: -63px -65px;
+}
+li.horizontal-type a.safari
+{
+	background-position: -84px -65px;
+}
+div.browser-placeholder
+{
+	height: 22px; /* height of icon browser */
+	line-height: 22px;
+	vertical-align: middle;
+	color: #808080;
+}

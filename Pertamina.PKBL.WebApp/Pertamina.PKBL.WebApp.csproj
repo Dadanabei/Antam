@@ -1,0 +1,1886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BEE65DC-536E-46AC-AC12-489776E8968B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pertamina.PKBL.WebApp</RootNamespace>
+    <AssemblyName>Pertamina.PKBL.WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Web, Version=13.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administer\AddProvince.aspx" />
+    <Content Include="Administer\AddKantorCabangRek.aspx" />
+    <Content Include="Administer\ClosingKolekti.aspx" />
+    <Content Include="Administer\ClosingMonth.aspx" />
+    <Content Include="Administer\DownloadMaster.aspx" />
+    <Content Include="Administer\MasterKantorCabang.aspx" />
+    <Content Include="Administer\ProvinceIndex.aspx" />
+    <Content Include="Administer\AddKantorCabang.aspx" />
+    <Content Include="Administer\JurnalReg1.aspx" />
+    <Content Include="Administer\HapusJurnal.aspx" />
+    <Content Include="Administer\UploadTemplate.aspx" />
+    <Content Include="Akuntansi\DaftarAngsuran.aspx" />
+    <Content Include="Akuntansi\DetailDaftarJurnalUmum.aspx" />
+    <Content Include="Akuntansi\DetailPembayaranPK.aspx" />
+    <Content Include="Akuntansi\DetailPengembalianKelebihan.aspx" />
+    <Content Include="Akuntansi\DetailPenyaluranHibah.aspx" />
+    <Content Include="Akuntansi\DetailPerwabPanjar.aspx" />
+    <Content Include="Akuntansi\Detail_Kartu_Piutang.aspx" />
+    <Content Include="Akuntansi\Detail_PencairanPK.aspx" />
+    <Content Include="Akuntansi\DetailDiskonJasa.aspx" />
+    <Content Include="Akuntansi\DiskonJasa.aspx" />
+    <Content Include="Akuntansi\EditJurnal.aspx" />
+    <Content Include="Akuntansi\InputPrognosa.aspx" />
+    <Content Include="Akuntansi\JurnalAdjustmentControl\DaftarAdjustment.ascx" />
+    <Content Include="Akuntansi\JurnalAdjustmentControl\KoreksiJurnalAdjustment.aspx" />
+    <Content Include="Akuntansi\JurnalAdjustmentControl\LihatDetailJurnalAdjustment.aspx" />
+    <Content Include="Akuntansi\JurnalAdjustmentControl\PostingJurnalAdjustment.ascx" />
+    <Content Include="Akuntansi\JurnalTransaksiKasbank\DaftarKasBank.ascx" />
+    <Content Include="Akuntansi\JurnalTransaksiKasbank\PostingKasBank.ascx" />
+    <Content Include="Akuntansi\JurnalUmumControl\DaftarJurnalUmum.ascx" />
+    <Content Include="Akuntansi\JurnalUmumControl\KoreksiJurnalUmum.aspx" />
+    <Content Include="Akuntansi\JurnalUmumControl\LihatDetailJurnalUmum.aspx" />
+    <Content Include="Akuntansi\JurnalUmumControl\PostingJournal.ascx" />
+    <Content Include="Akuntansi\Kartu_Piutang.aspx" />
+    <Content Include="Akuntansi\JurnalTransaksiKasbank\KoreksiJurnalKasBank.aspx" />
+    <Content Include="Akuntansi\JurnalTransaksiKasbank\LihatDetailKasBank.aspx" />
+    <Content Include="Akuntansi\Lihatpanjar.aspx" />
+    <Content Include="Akuntansi\MappingBankCoa.aspx" />
+    <Content Include="Akuntansi\MappingCabangProvinsi.aspx" />
+    <Content Include="Akuntansi\MappingCoaJenisBinaling.aspx" />
+    <Content Include="Akuntansi\MappingKotaAc.aspx" />
+    <Content Include="Akuntansi\MitraBinaanBermasalah.aspx" />
+    <Content Include="Akuntansi\MitraBinaanLunas.aspx" />
+    <Content Include="Akuntansi\PembayaranPK.aspx" />
+    <Content Include="Akuntansi\PengembalianKelebihan.aspx" />
+    <Content Include="Akuntansi\PenyaluranBLDetail.aspx" />
+    <Content Include="Akuntansi\PenyaluranHibah.aspx" />
+    <Content Include="Akuntansi\PostingJurnal.aspx" />
+    <Content Include="Akuntansi\PrintDaftarAngsuran.aspx" />
+    <Content Include="Akuntansi\PrognosaPK.aspx" />
+    <Content Include="Akuntansi\RKA.aspx" />
+    <Content Include="Akuntansi\AktivaTetap.aspx" />
+    <Content Include="Akuntansi\SuratKartuPiutang.aspx" />
+    <Content Include="Akuntansi\TambahDiskonJasa.aspx" />
+    <Content Include="Akuntansi\TambahPembayaranPK.aspx" />
+    <Content Include="Akuntansi\TransferDanaBank.aspx" />
+    <Content Include="Akuntansi\PenyaluranBL.aspx" />
+    <Content Include="Akuntansi\PanjarIndex.aspx" />
+    <Content Include="Akuntansi\PerwabPanjar.aspx" />
+    <Content Include="Akuntansi\TambahPanjar.aspx" />
+    <Content Include="Akuntansi\JurnalUmum.aspx" />
+    <Content Include="Akuntansi\PencairanPK.aspx" />
+    <Content Include="Akuntansi\Adjustment.aspx" />
+    <Content Include="Akuntansi\TransaksiKasBank.aspx" />
+    <Content Include="Akuntansi\TransferDanaBankControl\DaftarTransfer.ascx" />
+    <Content Include="Akuntansi\TransferDanaBankControl\DetailTransfer.ascx" />
+    <Content Include="Akuntansi\TransferDanaBankControl\LihatDaftarTransfer.aspx" />
+    <Content Include="Akuntansi\UploadPembayaranPK.aspx" />
+    <Content Include="BinaLingk\CheckList.aspx" />
+    <Content Include="BinaLingk\ListBInalingkungan.ascx" />
+    <Content Include="BinaLingk\MasterBL.aspx" />
+    <Content Include="BinaLingk\AddJenisBL.aspx" />
+    <Content Include="BinaLingk\PenilaianBLUserControl\Daftar CIF.ascx" />
+    <Content Include="BinaLingk\PenilaianBLUserControl\List Survei Diterima.ascx" />
+    <Content Include="BinaLingk\PenilaianBLUserControl\List Survei Ditolak.ascx" />
+    <Content Include="BinaLingk\PermohonanBL.aspx" />
+    <Content Include="BinaLingk\PenilaianBL.aspx" />
+    <Content Include="BinaLingk\PersetujuanBL.aspx" />
+    <Content Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDisetujuiUserControl.ascx" />
+    <Content Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDitolakUserControl.ascx" />
+    <Content Include="BinaLingk\PersetujuanBLUserControls\BinLingTambahPersetujuanUserControl.ascx" />
+    <Content Include="BinaLingk\UploadRealisasiBL.aspx" />
+    <Content Include="bin\Helper.dll" />
+    <Content Include="cityreference.txt" />
+    <Content Include="content\bootstrap-datepicker.min.css" />
+    <Content Include="content\datepicker3.css" />
+    <Content Include="content\fb-button.css" />
+    <Content Include="content\filters.css" />
+    <Content Include="content\images\arrows-ffffff.png" />
+    <Content Include="content\images\assembly-exist.png" />
+    <Content Include="content\images\background_input.gif" />
+    <Content Include="content\images\bg02.jpg" />
+    <Content Include="content\images\checklist.png" />
+    <Content Include="content\images\delete-rect.png" />
+    <Content Include="content\images\delete.png" />
+    <Content Include="content\images\download-icon.gif" />
+    <Content Include="content\images\edit.png" />
+    <Content Include="content\images\first.png" />
+    <Content Include="content\images\imagegen.png" />
+    <Content Include="content\images\last.png" />
+    <Content Include="content\images\logo-pkbl2.png" />
+    <Content Include="content\images\master-sprite.png" />
+    <Content Include="content\images\new.png" />
+    <Content Include="content\images\next-48.png" />
+    <Content Include="content\images\prev-48.png" />
+    <Content Include="content\images\print.png" />
+    <Content Include="content\images\ptmn.ico" />
+    <Content Include="content\images\shadow.png" />
+    <Content Include="content\jquery.plupload.queue.css" />
+    <Content Include="content\main.css" />
+    <Content Include="content\print.css" />
+    <Content Include="content\Site.css" />
+    <Content Include="content\ui.nyroModal.css" />
+    <Content Include="content\uploadify.css" />
+    <Content Include="content\web.global.reset.css" />
+    <Content Include="content\web.html.control.css" />
+    <Content Include="content\web.page.admin.css" />
+    <Content Include="content\web.page.error.css" />
+    <Content Include="content\web.page.forms.css" />
+    <Content Include="content\web.page.layout.css" />
+    <Content Include="content\web.popup.layout.css" />
+    <Content Include="content\web.ui.css" />
+    <Content Include="content\web.ui.gridview.css" />
+    <Content Include="content\web.ui.icon.css" />
+    <Content Include="content\web.ui.login.css" />
+    <Content Include="content\web.ui.menu.superfish.css" />
+    <Content Include="content\web.ui.panel.css" />
+    <Content Include="content\web.ui.table.css" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Footer.ascx" />
+    <Content Include="Hibah\DetailPengajuanHibah.aspx" />
+    <Content Include="Hibah\DetailPersetujuanHibah.aspx" />
+    <Content Include="Hibah\PengajuanHibah.aspx" />
+    <Content Include="Hibah\PersetujuanHibah.aspx" />
+    <Content Include="Kemitraan\DetailJadwalPembayaran.aspx" />
+    <Content Include="Kemitraan\DetailPenerimaanProposal.aspx" />
+    <Content Include="Kemitraan\DetailPenilaianSurvey.aspx" />
+    <Content Include="Kemitraan\DetailPersetujuanSurvey.aspx" />
+    <Content Include="Kemitraan\DetailReschedulePiutangKemitraan.aspx" />
+    <Content Include="Kemitraan\EditMonitoringMitra.aspx" />
+    <Content Include="Kemitraan\ListKemitraan\ListKemitraanAll.ascx" />
+    <Content Include="Kemitraan\ListKemitraan\ListKemitraanJDB.ascx" />
+    <Content Include="Kemitraan\ListKemitraan\ListKemitraanJKR.ascx" />
+    <Content Include="Kemitraan\ListKemitraan\ListKemitraanJSU.ascx" />
+    <Content Include="Kemitraan\MonitoringMitra.aspx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\Administrasi.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\BidangUsaha.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\Checklist.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\DataAgunan.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\DataPenjamin.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\DataPribadi.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\DataUsaha.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\Files.ascx" />
+    <Content Include="Kemitraan\PenerimaanPropsalControl\HasilInventarisasi.ascx" />
+    <Content Include="Kemitraan\PrintJadwalAngsuran.aspx" />
+    <Content Include="Kemitraan\profile.ascx" />
+    <Content Include="Kemitraan\ProposalPrint.aspx" />
+    <Content Include="Kemitraan\RealisasiKemitraanControl\ListAkad.ascx" />
+    <Content Include="Kemitraan\RealisasiKemitraanControl\Persetujuan.ascx" />
+    <Content Include="Kemitraan\RealisasiListAkadDetail.aspx" />
+    <Content Include="Kemitraan\RealisasiPersetujuanTambah.aspx" />
+    <Content Include="Kemitraan\SinergiBUMN.aspx" />
+    <Content Include="Kemitraan\MasterKreditKemitraan.aspx" />
+    <Content Include="Kemitraan\AddJenisKreditKemitraan.aspx" />
+    <Content Include="Kemitraan\MasterSektorKemitraan.aspx" />
+    <Content Include="Kemitraan\PenerimaanProposal.aspx" />
+    <Content Include="Kemitraan\JadwalPembayaran.aspx" />
+    <Content Include="Kemitraan\PerhitunganBungaPinjaman.aspx" />
+    <Content Include="Kemitraan\ReschedulePiutangKemitraan.aspx" />
+    <Content Include="Kemitraan\PersetujuanHibah.aspx" />
+    <Content Include="Kemitraan\PermohonanHibah.aspx" />
+    <Content Include="Kemitraan\RealisasiKemitraan.aspx" />
+    <Content Include="Kemitraan\PersetujuanSurvey.aspx" />
+    <Content Include="Kemitraan\PenilaianSurvey.aspx" />
+    <Content Include="content\fonts\fontawesome-webfont.eot" />
+    <Content Include="content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\fonts\fontawesome-webfont.woff" />
+    <Content Include="content\fonts\FontAwesome.otf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Kemitraan\SuratPerjanjianPinjaman.aspx" />
+    <Content Include="Kemitraan\TambahMonitoringMitra.aspx" />
+    <Content Include="Kemitraan\UploadRealisasiKemitraan.aspx" />
+    <Content Include="Layout.Master" />
+    <Content Include="Auth.master" />
+    <Content Include="Akuntansi\AccIndex.aspx" />
+    <Content Include="Administer\MyProfile.aspx" />
+    <Content Include="Administer\CityIndex.aspx" />
+    <Content Include="Administer\Verifikator.aspx" />
+    <Content Include="Administer\KartuMBBermasalah.aspx" />
+    <Content Include="content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Default.aspx" />
+    <Content Include="MenuControl.ascx" />
+    <Content Include="NoteForTeam.txt" />
+    <Content Include="Reporting\Koreksi.aspx" />
+    <Content Include="Reporting\PrintKartuPiutang.aspx" />
+    <Content Include="Reporting\PrintPage.aspx" />
+    <Content Include="Reporting\RepAkuntansUserControl\DetailRepBaganAkun.aspx" />
+    <Content Include="Reporting\RepAkuntansUserControl\PrintNeracaSaldo.aspx" />
+    <Content Include="Reporting\RepAkuntansUserControl\RepBaganAkun.aspx" />
+    <Content Include="Reporting\RepAkuntansUserControl\RepNeracaSaldo.aspx" />
+    <Content Include="Reporting\RepBinaLingk.aspx" />
+    <None Include="Properties\PublishProfiles\pkbl.pubxml" />
+    <Content Include="Reporting\RepBinaLingUserControl\RepArusDanaProgramBinaLingUserControl.ascx" />
+    <Content Include="Reporting\RepBinaLingUserControl\RepPerkembanganBinaLinguserControl.ascx" />
+    <Content Include="Reporting\RepBinaLingUserControl\RepRealisasiBinaLingUserControl.ascx" />
+    <Content Include="Reporting\RepBinaLingUserControl\RepRekapLaporanPerPropinsiUserControl.ascx" />
+    <Content Include="Reporting\RepBinaLingUserControl\RepUsulanBinaLingUserControl.ascx" />
+    <Content Include="Reporting\RepBinaLingUsulanDataSet.xsc">
+      <DependentUpon>RepBinaLingUsulanDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reporting\RepBinalingRealisasiDataSet.xsc">
+      <DependentUpon>RepBinalingRealisasiDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reporting\RepBinalingRealisasiDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepBinalingRealisasiDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reporting\RepBinalingRealisasiDataSet.xss">
+      <DependentUpon>RepBinalingRealisasiDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reporting\RepBinaLingUsulanDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepBinaLingUsulanDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reporting\RepBinaLingUsulanDataSet.xss">
+      <DependentUpon>RepBinaLingUsulanDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Service References\wcf_auth\AuthenticateUser.wsdl" />
+    <None Include="Service References\wcf_auth\AuthenticateUser.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_auth\AuthenticateUser1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_auth\AuthenticateUser2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_auth\AuthenticateUser3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_auth\AuthenticateUser4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reporting\RepKemitraanDetail\RepAkumulasiDanaTersediaDanPenggunaandana.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepAkumulasiRealisasiProgramKemitraan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepDanaTersediaDanPenggunaanDana.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepMitraBinaanLunas.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepMitraBinaanMenunggak.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepMitraBinaanOutstanding.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepMutasiKas.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepPelunasanProgramKemitraan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepPembayaranMitraBinaan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepPembayaranPiutang.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepPerkembanganPinjamanMitraBinaan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepRealisasiHibah.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepRealisasiProgramKemitraan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepUsulanPemohonProgramKemitraan.aspx" />
+    <Content Include="Reporting\RepKemitraanDetail\RepUsulanPrrogramKemitraan.aspx" />
+    <Content Include="Reporting\RepLainLain\RepAkumulasiRealisasiPenyaluranDana.aspx" />
+    <Content Include="Reporting\RepLainLain\RepAlokasiPenyisihanLaba.aspx" />
+    <Content Include="Reporting\RepLainLain\RepDaftarAktivaDanPenyusutan.aspx" />
+    <Content Include="Reporting\RepLainLain\RepJurnalDetail.aspx" />
+    <Content Include="Reporting\RepLainLain\RepKonfirmasiPiutang.aspx" />
+    <Content Include="Reporting\RepLainLain\RepLihatDetailJurnal.aspx" />
+    <Content Include="Reporting\RepLainLain\RepRealisasiDanaProgramKemitraan.aspx" />
+    <Content Include="Reporting\RepLainLain\RepUsulanPenyaluran.aspx" />
+    <Content Include="Service References\wcf_auth\Pertamina.PKBL.WebApp.wcf_auth.ResponseUsersData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wcf_domain_list\GetAllDomain.wsdl" />
+    <None Include="Service References\wcf_domain_list\GetAllDomain.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_domain_list\GetAllDomain1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wcf_domain_list\GetAllDomain2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\wcf_domain_list\Pertamina.PKBL.WebApp.wcf_domain_list.DomainList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="UploadedXls\Template\Tamplate_Upload_Pembayaran.xls" />
+    <Content Include="UploadedXls\Template\Template_Realisasi_Kemitraan.xls" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="scripts\ajax-data-mapping.js" />
+    <Content Include="scripts\ajax-sales-area.js" />
+    <Content Include="scripts\amcharts.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\app.min.js" />
+    <Content Include="scripts\Autocomplete.js" />
+    <Content Include="scripts\browserplus-min.js" />
+    <Content Include="scripts\calendar.js" />
+    <Content Include="scripts\demo.js" />
+    <Content Include="scripts\functions.js" />
+    <Content Include="scripts\Fungsi.js" />
+    <Content Include="scripts\jquery-1.10.1.min.js" />
+    <Content Include="scripts\jquery-1.12.4.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="content\jquery-ui.css" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jquery.cookie.js" />
+    <Content Include="scripts\jquery.dynatree.js" />
+    <Content Include="scripts\jquery.maskedinput-1.3.js" />
+    <Content Include="scripts\jquery.min.js-1.5.1.js" />
+    <Content Include="scripts\jquery.nyroModal-ie6.js" />
+    <Content Include="scripts\jquery.nyroModal.custom.js" />
+    <Content Include="scripts\jquery.plupload.queue.js" />
+    <Content Include="scripts\jquery.selectboxes.js" />
+    <Content Include="scripts\master-page-load.js" />
+    <Content Include="scripts\master-popup-load.js" />
+    <Content Include="scripts\plupload.flash.js" />
+    <Content Include="scripts\plupload.js" />
+    <Content Include="scripts\popcalendar.js" />
+    <Content Include="scripts\superfish.js" />
+    <None Include="Service References\wcf_auth\AuthenticateUser.disco" />
+    <None Include="Service References\wcf_auth\configuration91.svcinfo" />
+    <None Include="Service References\wcf_auth\configuration.svcinfo" />
+    <None Include="Service References\wcf_auth\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wcf_domain_list\GetAllDomain.disco" />
+    <None Include="Service References\wcf_domain_list\configuration91.svcinfo" />
+    <None Include="Service References\wcf_domain_list\configuration.svcinfo" />
+    <None Include="Service References\wcf_domain_list\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WebSiteMenu.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.min.css" />
+    <Content Include="content\font-awesome.min.css" />
+    <Content Include="content\fonts\fontawesome-webfont.svg" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\images\bell.png" />
+    <Content Include="content\images\bg01.jpg" />
+    <Content Include="content\images\help.png" />
+    <Content Include="content\images\logo.png" />
+    <Content Include="content\images\logout.png" />
+    <Content Include="content\images\message.png" />
+    <Content Include="content\images\tasks.png" />
+    <Content Include="content\images\user.png" />
+    <Content Include="content\login.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Reporting\LinksPage.aspx" />
+    <Content Include="Reporting\RepLain2.aspx" />
+    <Content Include="Reporting\RepPenyisihanPiu.aspx" />
+    <Content Include="Reporting\RepBUMN.aspx" />
+    <Content Include="Reporting\RepKemitraaan.aspx" />
+    <Content Include="Reporting\RepAkuntansii.aspx" />
+    <Content Include="Administer\AnalisisData.aspx" />
+    <Content Include="Reporting\Dashboard.aspx" />
+    <Content Include="scripts\bootstrap-datepicker.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\html-helper.js" />
+    <Content Include="scripts\jquery-2.2.3.min.js" />
+    <Content Include="scripts\jquery.mask.min.js" />
+    <Content Include="scripts\numeral.min.js" />
+    <Content Include="scripts\sampledata\flot-data.js" />
+    <Content Include="scripts\sampledata\morris-data.js" />
+    <Content Include="TopMenu.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administer\AddProvince.aspx.cs">
+      <DependentUpon>AddProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\AddProvince.aspx.designer.cs">
+      <DependentUpon>AddProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\AddKantorCabangRek.aspx.cs">
+      <DependentUpon>AddKantorCabangRek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\AddKantorCabangRek.aspx.designer.cs">
+      <DependentUpon>AddKantorCabangRek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\ClosingKolekti.aspx.cs">
+      <DependentUpon>ClosingKolekti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\ClosingKolekti.aspx.designer.cs">
+      <DependentUpon>ClosingKolekti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\ClosingMonth.aspx.cs">
+      <DependentUpon>ClosingMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\ClosingMonth.aspx.designer.cs">
+      <DependentUpon>ClosingMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\DownloadMaster.aspx.cs">
+      <DependentUpon>DownloadMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\DownloadMaster.aspx.designer.cs">
+      <DependentUpon>DownloadMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\MasterKantorCabang.aspx.cs">
+      <DependentUpon>MasterKantorCabang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\MasterKantorCabang.aspx.designer.cs">
+      <DependentUpon>MasterKantorCabang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\ProvinceIndex.aspx.cs">
+      <DependentUpon>ProvinceIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\ProvinceIndex.aspx.designer.cs">
+      <DependentUpon>ProvinceIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\AddKantorCabang.aspx.cs">
+      <DependentUpon>AddKantorCabang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\AddKantorCabang.aspx.designer.cs">
+      <DependentUpon>AddKantorCabang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\JurnalReg1.aspx.cs">
+      <DependentUpon>JurnalReg1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\JurnalReg1.aspx.designer.cs">
+      <DependentUpon>JurnalReg1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\HapusJurnal.aspx.cs">
+      <DependentUpon>HapusJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\HapusJurnal.aspx.designer.cs">
+      <DependentUpon>HapusJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\UploadTemplate.aspx.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\UploadTemplate.aspx.designer.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DaftarAngsuran.aspx.cs">
+      <DependentUpon>DaftarAngsuran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DaftarAngsuran.aspx.designer.cs">
+      <DependentUpon>DaftarAngsuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailDaftarJurnalUmum.aspx.cs">
+      <DependentUpon>DetailDaftarJurnalUmum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailDaftarJurnalUmum.aspx.designer.cs">
+      <DependentUpon>DetailDaftarJurnalUmum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPembayaranPK.aspx.cs">
+      <DependentUpon>DetailPembayaranPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPembayaranPK.aspx.designer.cs">
+      <DependentUpon>DetailPembayaranPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPengembalianKelebihan.aspx.cs">
+      <DependentUpon>DetailPengembalianKelebihan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPengembalianKelebihan.aspx.designer.cs">
+      <DependentUpon>DetailPengembalianKelebihan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPenyaluranHibah.aspx.cs">
+      <DependentUpon>DetailPenyaluranHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPenyaluranHibah.aspx.designer.cs">
+      <DependentUpon>DetailPenyaluranHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPerwabPanjar.aspx.cs">
+      <DependentUpon>DetailPerwabPanjar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailPerwabPanjar.aspx.designer.cs">
+      <DependentUpon>DetailPerwabPanjar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\Detail_Kartu_Piutang.aspx.cs">
+      <DependentUpon>Detail_Kartu_Piutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\Detail_Kartu_Piutang.aspx.designer.cs">
+      <DependentUpon>Detail_Kartu_Piutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\Detail_PencairanPK.aspx.cs">
+      <DependentUpon>Detail_PencairanPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\Detail_PencairanPK.aspx.designer.cs">
+      <DependentUpon>Detail_PencairanPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DetailDiskonJasa.aspx.cs">
+      <DependentUpon>DetailDiskonJasa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DetailDiskonJasa.aspx.designer.cs">
+      <DependentUpon>DetailDiskonJasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\DiskonJasa.aspx.cs">
+      <DependentUpon>DiskonJasa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\DiskonJasa.aspx.designer.cs">
+      <DependentUpon>DiskonJasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\EditJurnal.aspx.cs">
+      <DependentUpon>EditJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\EditJurnal.aspx.designer.cs">
+      <DependentUpon>EditJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\InputPrognosa.aspx.cs">
+      <DependentUpon>InputPrognosa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\InputPrognosa.aspx.designer.cs">
+      <DependentUpon>InputPrognosa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\DaftarAdjustment.ascx.cs">
+      <DependentUpon>DaftarAdjustment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\DaftarAdjustment.ascx.designer.cs">
+      <DependentUpon>DaftarAdjustment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\KoreksiJurnalAdjustment.aspx.cs">
+      <DependentUpon>KoreksiJurnalAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\KoreksiJurnalAdjustment.aspx.designer.cs">
+      <DependentUpon>KoreksiJurnalAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\LihatDetailJurnalAdjustment.aspx.cs">
+      <DependentUpon>LihatDetailJurnalAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\LihatDetailJurnalAdjustment.aspx.designer.cs">
+      <DependentUpon>LihatDetailJurnalAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\PostingJurnalAdjustment.ascx.cs">
+      <DependentUpon>PostingJurnalAdjustment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalAdjustmentControl\PostingJurnalAdjustment.ascx.designer.cs">
+      <DependentUpon>PostingJurnalAdjustment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\DaftarKasBank.ascx.cs">
+      <DependentUpon>DaftarKasBank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\DaftarKasBank.ascx.designer.cs">
+      <DependentUpon>DaftarKasBank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\PostingKasBank.ascx.cs">
+      <DependentUpon>PostingKasBank.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\PostingKasBank.ascx.designer.cs">
+      <DependentUpon>PostingKasBank.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\DaftarJurnalUmum.ascx.cs">
+      <DependentUpon>DaftarJurnalUmum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\DaftarJurnalUmum.ascx.designer.cs">
+      <DependentUpon>DaftarJurnalUmum.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\KoreksiJurnalUmum.aspx.cs">
+      <DependentUpon>KoreksiJurnalUmum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\KoreksiJurnalUmum.aspx.designer.cs">
+      <DependentUpon>KoreksiJurnalUmum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\LihatDetailJurnalUmum.aspx.cs">
+      <DependentUpon>LihatDetailJurnalUmum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\LihatDetailJurnalUmum.aspx.designer.cs">
+      <DependentUpon>LihatDetailJurnalUmum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\PostingJournal.ascx.cs">
+      <DependentUpon>PostingJournal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmumControl\PostingJournal.ascx.designer.cs">
+      <DependentUpon>PostingJournal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\Kartu_Piutang.aspx.cs">
+      <DependentUpon>Kartu_Piutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\Kartu_Piutang.aspx.designer.cs">
+      <DependentUpon>Kartu_Piutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\KoreksiJurnalKasBank.aspx.cs">
+      <DependentUpon>KoreksiJurnalKasBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\KoreksiJurnalKasBank.aspx.designer.cs">
+      <DependentUpon>KoreksiJurnalKasBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\LihatDetailKasBank.aspx.cs">
+      <DependentUpon>LihatDetailKasBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalTransaksiKasbank\LihatDetailKasBank.aspx.designer.cs">
+      <DependentUpon>LihatDetailKasBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\Lihatpanjar.aspx.cs">
+      <DependentUpon>Lihatpanjar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\Lihatpanjar.aspx.designer.cs">
+      <DependentUpon>Lihatpanjar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MappingBankCoa.aspx.cs">
+      <DependentUpon>MappingBankCoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MappingBankCoa.aspx.designer.cs">
+      <DependentUpon>MappingBankCoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MappingCabangProvinsi.aspx.cs">
+      <DependentUpon>MappingCabangProvinsi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MappingCabangProvinsi.aspx.designer.cs">
+      <DependentUpon>MappingCabangProvinsi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MappingCoaJenisBinaling.aspx.cs">
+      <DependentUpon>MappingCoaJenisBinaling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MappingCoaJenisBinaling.aspx.designer.cs">
+      <DependentUpon>MappingCoaJenisBinaling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MappingKotaAc.aspx.cs">
+      <DependentUpon>MappingKotaAc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MappingKotaAc.aspx.designer.cs">
+      <DependentUpon>MappingKotaAc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MitraBinaanBermasalah.aspx.cs">
+      <DependentUpon>MitraBinaanBermasalah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MitraBinaanBermasalah.aspx.designer.cs">
+      <DependentUpon>MitraBinaanBermasalah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\MitraBinaanLunas.aspx.cs">
+      <DependentUpon>MitraBinaanLunas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\MitraBinaanLunas.aspx.designer.cs">
+      <DependentUpon>MitraBinaanLunas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PembayaranPK.aspx.cs">
+      <DependentUpon>PembayaranPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PembayaranPK.aspx.designer.cs">
+      <DependentUpon>PembayaranPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PengembalianKelebihan.aspx.cs">
+      <DependentUpon>PengembalianKelebihan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PengembalianKelebihan.aspx.designer.cs">
+      <DependentUpon>PengembalianKelebihan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranBLDetail.aspx.cs">
+      <DependentUpon>PenyaluranBLDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranBLDetail.aspx.designer.cs">
+      <DependentUpon>PenyaluranBLDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranHibah.aspx.cs">
+      <DependentUpon>PenyaluranHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranHibah.aspx.designer.cs">
+      <DependentUpon>PenyaluranHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PostingJurnal.aspx.cs">
+      <DependentUpon>PostingJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PostingJurnal.aspx.designer.cs">
+      <DependentUpon>PostingJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PrintDaftarAngsuran.aspx.cs">
+      <DependentUpon>PrintDaftarAngsuran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PrintDaftarAngsuran.aspx.designer.cs">
+      <DependentUpon>PrintDaftarAngsuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PrognosaPK.aspx.cs">
+      <DependentUpon>PrognosaPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PrognosaPK.aspx.designer.cs">
+      <DependentUpon>PrognosaPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\RKA.aspx.cs">
+      <DependentUpon>RKA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\RKA.aspx.designer.cs">
+      <DependentUpon>RKA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\AktivaTetap.aspx.cs">
+      <DependentUpon>AktivaTetap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\AktivaTetap.aspx.designer.cs">
+      <DependentUpon>AktivaTetap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\SuratKartuPiutang.aspx.cs">
+      <DependentUpon>SuratKartuPiutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\SuratKartuPiutang.aspx.designer.cs">
+      <DependentUpon>SuratKartuPiutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TambahDiskonJasa.aspx.cs">
+      <DependentUpon>TambahDiskonJasa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TambahDiskonJasa.aspx.designer.cs">
+      <DependentUpon>TambahDiskonJasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TambahPembayaranPK.aspx.cs">
+      <DependentUpon>TambahPembayaranPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TambahPembayaranPK.aspx.designer.cs">
+      <DependentUpon>TambahPembayaranPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBank.aspx.cs">
+      <DependentUpon>TransferDanaBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBank.aspx.designer.cs">
+      <DependentUpon>TransferDanaBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranBL.aspx.cs">
+      <DependentUpon>PenyaluranBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PenyaluranBL.aspx.designer.cs">
+      <DependentUpon>PenyaluranBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PanjarIndex.aspx.cs">
+      <DependentUpon>PanjarIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PanjarIndex.aspx.designer.cs">
+      <DependentUpon>PanjarIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PerwabPanjar.aspx.cs">
+      <DependentUpon>PerwabPanjar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PerwabPanjar.aspx.designer.cs">
+      <DependentUpon>PerwabPanjar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TambahPanjar.aspx.cs">
+      <DependentUpon>TambahPanjar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TambahPanjar.aspx.designer.cs">
+      <DependentUpon>TambahPanjar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmum.aspx.cs">
+      <DependentUpon>JurnalUmum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\JurnalUmum.aspx.designer.cs">
+      <DependentUpon>JurnalUmum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\PencairanPK.aspx.cs">
+      <DependentUpon>PencairanPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\PencairanPK.aspx.designer.cs">
+      <DependentUpon>PencairanPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\Adjustment.aspx.cs">
+      <DependentUpon>Adjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\Adjustment.aspx.designer.cs">
+      <DependentUpon>Adjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TransaksiKasBank.aspx.cs">
+      <DependentUpon>TransaksiKasBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TransaksiKasBank.aspx.designer.cs">
+      <DependentUpon>TransaksiKasBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\DaftarTransfer.ascx.cs">
+      <DependentUpon>DaftarTransfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\DaftarTransfer.ascx.designer.cs">
+      <DependentUpon>DaftarTransfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\DetailTransfer.ascx.cs">
+      <DependentUpon>DetailTransfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\DetailTransfer.ascx.designer.cs">
+      <DependentUpon>DetailTransfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\LihatDaftarTransfer.aspx.cs">
+      <DependentUpon>LihatDaftarTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\TransferDanaBankControl\LihatDaftarTransfer.aspx.designer.cs">
+      <DependentUpon>LihatDaftarTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\UploadPembayaranPK.aspx.cs">
+      <DependentUpon>UploadPembayaranPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\UploadPembayaranPK.aspx.designer.cs">
+      <DependentUpon>UploadPembayaranPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\CheckList.aspx.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\CheckList.aspx.designer.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\ListBInalingkungan.ascx.cs">
+      <DependentUpon>ListBInalingkungan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\ListBInalingkungan.ascx.designer.cs">
+      <DependentUpon>ListBInalingkungan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\MasterBL.aspx.cs">
+      <DependentUpon>MasterBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\MasterBL.aspx.designer.cs">
+      <DependentUpon>MasterBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\AddJenisBL.aspx.cs">
+      <DependentUpon>AddJenisBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\AddJenisBL.aspx.designer.cs">
+      <DependentUpon>AddJenisBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\Daftar CIF.ascx.cs">
+      <DependentUpon>Daftar CIF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\Daftar CIF.ascx.designer.cs">
+      <DependentUpon>Daftar CIF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\List Survei Diterima.ascx.cs">
+      <DependentUpon>List Survei Diterima.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\List Survei Diterima.ascx.designer.cs">
+      <DependentUpon>List Survei Diterima.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\List Survei Ditolak.ascx.cs">
+      <DependentUpon>List Survei Ditolak.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBLUserControl\List Survei Ditolak.ascx.designer.cs">
+      <DependentUpon>List Survei Ditolak.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PermohonanBL.aspx.cs">
+      <DependentUpon>PermohonanBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PermohonanBL.aspx.designer.cs">
+      <DependentUpon>PermohonanBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBL.aspx.cs">
+      <DependentUpon>PenilaianBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PenilaianBL.aspx.designer.cs">
+      <DependentUpon>PenilaianBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBL.aspx.cs">
+      <DependentUpon>PersetujuanBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBL.aspx.designer.cs">
+      <DependentUpon>PersetujuanBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDisetujuiUserControl.ascx.cs">
+      <DependentUpon>BinLingDaftarDisetujuiUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDisetujuiUserControl.ascx.designer.cs">
+      <DependentUpon>BinLingDaftarDisetujuiUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDitolakUserControl.ascx.cs">
+      <DependentUpon>BinLingDaftarDitolakUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingDaftarDitolakUserControl.ascx.designer.cs">
+      <DependentUpon>BinLingDaftarDitolakUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingTambahPersetujuanUserControl.ascx.cs">
+      <DependentUpon>BinLingTambahPersetujuanUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\PersetujuanBLUserControls\BinLingTambahPersetujuanUserControl.ascx.designer.cs">
+      <DependentUpon>BinLingTambahPersetujuanUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BinaLingk\UploadRealisasiBL.aspx.cs">
+      <DependentUpon>UploadRealisasiBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BinaLingk\UploadRealisasiBL.aspx.designer.cs">
+      <DependentUpon>UploadRealisasiBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hibah\DetailPengajuanHibah.aspx.cs">
+      <DependentUpon>DetailPengajuanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hibah\DetailPengajuanHibah.aspx.designer.cs">
+      <DependentUpon>DetailPengajuanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hibah\DetailPersetujuanHibah.aspx.cs">
+      <DependentUpon>DetailPersetujuanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hibah\DetailPersetujuanHibah.aspx.designer.cs">
+      <DependentUpon>DetailPersetujuanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hibah\PengajuanHibah.aspx.cs">
+      <DependentUpon>PengajuanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hibah\PengajuanHibah.aspx.designer.cs">
+      <DependentUpon>PengajuanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hibah\PersetujuanHibah.aspx.cs">
+      <DependentUpon>PersetujuanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hibah\PersetujuanHibah.aspx.designer.cs">
+      <DependentUpon>PersetujuanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\DetailJadwalPembayaran.aspx.cs">
+      <DependentUpon>DetailJadwalPembayaran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\DetailJadwalPembayaran.aspx.designer.cs">
+      <DependentUpon>DetailJadwalPembayaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPenerimaanProposal.aspx.cs">
+      <DependentUpon>DetailPenerimaanProposal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPenerimaanProposal.aspx.designer.cs">
+      <DependentUpon>DetailPenerimaanProposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPenilaianSurvey.aspx.cs">
+      <DependentUpon>DetailPenilaianSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPenilaianSurvey.aspx.designer.cs">
+      <DependentUpon>DetailPenilaianSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPersetujuanSurvey.aspx.cs">
+      <DependentUpon>DetailPersetujuanSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\DetailPersetujuanSurvey.aspx.designer.cs">
+      <DependentUpon>DetailPersetujuanSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\DetailReschedulePiutangKemitraan.aspx.cs">
+      <DependentUpon>DetailReschedulePiutangKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\DetailReschedulePiutangKemitraan.aspx.designer.cs">
+      <DependentUpon>DetailReschedulePiutangKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\EditMonitoringMitra.aspx.cs">
+      <DependentUpon>EditMonitoringMitra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\EditMonitoringMitra.aspx.designer.cs">
+      <DependentUpon>EditMonitoringMitra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanAll.ascx.cs">
+      <DependentUpon>ListKemitraanAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanAll.ascx.designer.cs">
+      <DependentUpon>ListKemitraanAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJDB.ascx.cs">
+      <DependentUpon>ListKemitraanJDB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJDB.ascx.designer.cs">
+      <DependentUpon>ListKemitraanJDB.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJKR.ascx.cs">
+      <DependentUpon>ListKemitraanJKR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJKR.ascx.designer.cs">
+      <DependentUpon>ListKemitraanJKR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJSU.ascx.cs">
+      <DependentUpon>ListKemitraanJSU.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ListKemitraan\ListKemitraanJSU.ascx.designer.cs">
+      <DependentUpon>ListKemitraanJSU.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\MonitoringMitra.aspx.cs">
+      <DependentUpon>MonitoringMitra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\MonitoringMitra.aspx.designer.cs">
+      <DependentUpon>MonitoringMitra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Administrasi.ascx.cs">
+      <DependentUpon>Administrasi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Administrasi.ascx.designer.cs">
+      <DependentUpon>Administrasi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\BidangUsaha.ascx.cs">
+      <DependentUpon>BidangUsaha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\BidangUsaha.ascx.designer.cs">
+      <DependentUpon>BidangUsaha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Checklist.ascx.cs">
+      <DependentUpon>Checklist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Checklist.ascx.designer.cs">
+      <DependentUpon>Checklist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataAgunan.ascx.cs">
+      <DependentUpon>DataAgunan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataAgunan.ascx.designer.cs">
+      <DependentUpon>DataAgunan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataPenjamin.ascx.cs">
+      <DependentUpon>DataPenjamin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataPenjamin.ascx.designer.cs">
+      <DependentUpon>DataPenjamin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataPribadi.ascx.cs">
+      <DependentUpon>DataPribadi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataPribadi.ascx.designer.cs">
+      <DependentUpon>DataPribadi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataUsaha.ascx.cs">
+      <DependentUpon>DataUsaha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\DataUsaha.ascx.designer.cs">
+      <DependentUpon>DataUsaha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Files.ascx.cs">
+      <DependentUpon>Files.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\Files.ascx.designer.cs">
+      <DependentUpon>Files.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\HasilInventarisasi.ascx.cs">
+      <DependentUpon>HasilInventarisasi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanPropsalControl\HasilInventarisasi.ascx.designer.cs">
+      <DependentUpon>HasilInventarisasi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PrintJadwalAngsuran.aspx.cs">
+      <DependentUpon>PrintJadwalAngsuran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PrintJadwalAngsuran.aspx.designer.cs">
+      <DependentUpon>PrintJadwalAngsuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\profile.ascx.cs">
+      <DependentUpon>profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\profile.ascx.designer.cs">
+      <DependentUpon>profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ProposalPrint.aspx.cs">
+      <DependentUpon>ProposalPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ProposalPrint.aspx.designer.cs">
+      <DependentUpon>ProposalPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraanControl\ListAkad.ascx.cs">
+      <DependentUpon>ListAkad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraanControl\ListAkad.ascx.designer.cs">
+      <DependentUpon>ListAkad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraanControl\Persetujuan.ascx.cs">
+      <DependentUpon>Persetujuan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraanControl\Persetujuan.ascx.designer.cs">
+      <DependentUpon>Persetujuan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiListAkadDetail.aspx.cs">
+      <DependentUpon>RealisasiListAkadDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiListAkadDetail.aspx.designer.cs">
+      <DependentUpon>RealisasiListAkadDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiPersetujuanTambah.aspx.cs">
+      <DependentUpon>RealisasiPersetujuanTambah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiPersetujuanTambah.aspx.designer.cs">
+      <DependentUpon>RealisasiPersetujuanTambah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\SinergiBUMN.aspx.cs">
+      <DependentUpon>SinergiBUMN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\SinergiBUMN.aspx.designer.cs">
+      <DependentUpon>SinergiBUMN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\JadwalPembayaran.aspx.cs">
+      <DependentUpon>JadwalPembayaran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\JadwalPembayaran.aspx.designer.cs">
+      <DependentUpon>JadwalPembayaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PerhitunganBungaPinjaman.aspx.cs">
+      <DependentUpon>PerhitunganBungaPinjaman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PerhitunganBungaPinjaman.aspx.designer.cs">
+      <DependentUpon>PerhitunganBungaPinjaman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\ReschedulePiutangKemitraan.aspx.cs">
+      <DependentUpon>ReschedulePiutangKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\ReschedulePiutangKemitraan.aspx.designer.cs">
+      <DependentUpon>ReschedulePiutangKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PersetujuanHibah.aspx.cs">
+      <DependentUpon>PersetujuanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PersetujuanHibah.aspx.designer.cs">
+      <DependentUpon>PersetujuanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PermohonanHibah.aspx.cs">
+      <DependentUpon>PermohonanHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PermohonanHibah.aspx.designer.cs">
+      <DependentUpon>PermohonanHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraan.aspx.cs">
+      <DependentUpon>RealisasiKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\RealisasiKemitraan.aspx.designer.cs">
+      <DependentUpon>RealisasiKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PersetujuanSurvey.aspx.cs">
+      <DependentUpon>PersetujuanSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PersetujuanSurvey.aspx.designer.cs">
+      <DependentUpon>PersetujuanSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\SuratPerjanjianPinjaman.aspx.cs">
+      <DependentUpon>SuratPerjanjianPinjaman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\SuratPerjanjianPinjaman.aspx.designer.cs">
+      <DependentUpon>SuratPerjanjianPinjaman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\TambahMonitoringMitra.aspx.cs">
+      <DependentUpon>TambahMonitoringMitra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\TambahMonitoringMitra.aspx.designer.cs">
+      <DependentUpon>TambahMonitoringMitra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\UploadRealisasiKemitraan.aspx.cs">
+      <DependentUpon>UploadRealisasiKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\UploadRealisasiKemitraan.aspx.designer.cs">
+      <DependentUpon>UploadRealisasiKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.master.cs">
+      <DependentUpon>Auth.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth.master.designer.cs">
+      <DependentUpon>Auth.master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\MasterKreditKemitraan.aspx.cs">
+      <DependentUpon>MasterKreditKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\MasterKreditKemitraan.aspx.designer.cs">
+      <DependentUpon>MasterKreditKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\AddJenisKreditKemitraan.aspx.cs">
+      <DependentUpon>AddJenisKreditKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\AddJenisKreditKemitraan.aspx.designer.cs">
+      <DependentUpon>AddJenisKreditKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\MasterSektorKemitraan.aspx.cs">
+      <DependentUpon>MasterSektorKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\MasterSektorKemitraan.aspx.designer.cs">
+      <DependentUpon>MasterSektorKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanProposal.aspx.cs">
+      <DependentUpon>PenerimaanProposal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenerimaanProposal.aspx.designer.cs">
+      <DependentUpon>PenerimaanProposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kemitraan\PenilaianSurvey.aspx.cs">
+      <DependentUpon>PenilaianSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kemitraan\PenilaianSurvey.aspx.designer.cs">
+      <DependentUpon>PenilaianSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuControl.ascx.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuControl.ascx.designer.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\Koreksi.aspx.cs">
+      <DependentUpon>Koreksi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Koreksi.aspx.designer.cs">
+      <DependentUpon>Koreksi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\LinksPage.aspx.cs">
+      <DependentUpon>LinksPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\LinksPage.aspx.designer.cs">
+      <DependentUpon>LinksPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PrintKartuPiutang.aspx.cs">
+      <DependentUpon>PrintKartuPiutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PrintKartuPiutang.aspx.designer.cs">
+      <DependentUpon>PrintKartuPiutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PrintPage.aspx.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PrintPage.aspx.designer.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\DetailRepBaganAkun.aspx.cs">
+      <DependentUpon>DetailRepBaganAkun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\DetailRepBaganAkun.aspx.designer.cs">
+      <DependentUpon>DetailRepBaganAkun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\PrintNeracaSaldo.aspx.cs">
+      <DependentUpon>PrintNeracaSaldo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\PrintNeracaSaldo.aspx.designer.cs">
+      <DependentUpon>PrintNeracaSaldo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\RepBaganAkun.aspx.cs">
+      <DependentUpon>RepBaganAkun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\RepBaganAkun.aspx.designer.cs">
+      <DependentUpon>RepBaganAkun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\RepNeracaSaldo.aspx.cs">
+      <DependentUpon>RepNeracaSaldo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansUserControl\RepNeracaSaldo.aspx.designer.cs">
+      <DependentUpon>RepNeracaSaldo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingk.aspx.cs">
+      <DependentUpon>RepBinaLingk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingk.aspx.designer.cs">
+      <DependentUpon>RepBinaLingk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingRealisasi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingRealisasi.Designer.cs">
+      <DependentUpon>RepBinaLingRealisasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinalingRealisasiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepBinalingRealisasiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepArusDanaProgramBinaLingUserControl.ascx.cs">
+      <DependentUpon>RepArusDanaProgramBinaLingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepArusDanaProgramBinaLingUserControl.ascx.designer.cs">
+      <DependentUpon>RepArusDanaProgramBinaLingUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepPerkembanganBinaLinguserControl.ascx.cs">
+      <DependentUpon>RepPerkembanganBinaLinguserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepPerkembanganBinaLinguserControl.ascx.designer.cs">
+      <DependentUpon>RepPerkembanganBinaLinguserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepRealisasiBinaLingUserControl.ascx.cs">
+      <DependentUpon>RepRealisasiBinaLingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepRealisasiBinaLingUserControl.ascx.designer.cs">
+      <DependentUpon>RepRealisasiBinaLingUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepRekapLaporanPerPropinsiUserControl.ascx.cs">
+      <DependentUpon>RepRekapLaporanPerPropinsiUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepRekapLaporanPerPropinsiUserControl.ascx.designer.cs">
+      <DependentUpon>RepRekapLaporanPerPropinsiUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepUsulanBinaLingUserControl.ascx.cs">
+      <DependentUpon>RepUsulanBinaLingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUserControl\RepUsulanBinaLingUserControl.ascx.designer.cs">
+      <DependentUpon>RepUsulanBinaLingUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUsulan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUsulan.Designer.cs">
+      <DependentUpon>RepBinaLingUsulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBinaLingUsulanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepBinaLingUsulanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepAkumulasiDanaTersediaDanPenggunaandana.aspx.cs">
+      <DependentUpon>RepAkumulasiDanaTersediaDanPenggunaandana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepAkumulasiDanaTersediaDanPenggunaandana.aspx.designer.cs">
+      <DependentUpon>RepAkumulasiDanaTersediaDanPenggunaandana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepAkumulasiRealisasiProgramKemitraan.aspx.cs">
+      <DependentUpon>RepAkumulasiRealisasiProgramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepAkumulasiRealisasiProgramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepAkumulasiRealisasiProgramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepDanaTersediaDanPenggunaanDana.aspx.cs">
+      <DependentUpon>RepDanaTersediaDanPenggunaanDana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepDanaTersediaDanPenggunaanDana.aspx.designer.cs">
+      <DependentUpon>RepDanaTersediaDanPenggunaanDana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanLunas.aspx.cs">
+      <DependentUpon>RepMitraBinaanLunas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanLunas.aspx.designer.cs">
+      <DependentUpon>RepMitraBinaanLunas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanMenunggak.aspx.cs">
+      <DependentUpon>RepMitraBinaanMenunggak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanMenunggak.aspx.designer.cs">
+      <DependentUpon>RepMitraBinaanMenunggak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanOutstanding.aspx.cs">
+      <DependentUpon>RepMitraBinaanOutstanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMitraBinaanOutstanding.aspx.designer.cs">
+      <DependentUpon>RepMitraBinaanOutstanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMutasiKas.aspx.cs">
+      <DependentUpon>RepMutasiKas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepMutasiKas.aspx.designer.cs">
+      <DependentUpon>RepMutasiKas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPelunasanProgramKemitraan.aspx.cs">
+      <DependentUpon>RepPelunasanProgramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPelunasanProgramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepPelunasanProgramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPembayaranMitraBinaan.aspx.cs">
+      <DependentUpon>RepPembayaranMitraBinaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPembayaranMitraBinaan.aspx.designer.cs">
+      <DependentUpon>RepPembayaranMitraBinaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPembayaranPiutang.aspx.cs">
+      <DependentUpon>RepPembayaranPiutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPembayaranPiutang.aspx.designer.cs">
+      <DependentUpon>RepPembayaranPiutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPerkembanganPinjamanMitraBinaan.aspx.cs">
+      <DependentUpon>RepPerkembanganPinjamanMitraBinaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepPerkembanganPinjamanMitraBinaan.aspx.designer.cs">
+      <DependentUpon>RepPerkembanganPinjamanMitraBinaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepRealisasiHibah.aspx.cs">
+      <DependentUpon>RepRealisasiHibah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepRealisasiHibah.aspx.designer.cs">
+      <DependentUpon>RepRealisasiHibah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepRealisasiProgramKemitraan.aspx.cs">
+      <DependentUpon>RepRealisasiProgramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepRealisasiProgramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepRealisasiProgramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepUsulanPemohonProgramKemitraan.aspx.cs">
+      <DependentUpon>RepUsulanPemohonProgramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepUsulanPemohonProgramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepUsulanPemohonProgramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepUsulanPrrogramKemitraan.aspx.cs">
+      <DependentUpon>RepUsulanPrrogramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraanDetail\RepUsulanPrrogramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepUsulanPrrogramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLain2.aspx.cs">
+      <DependentUpon>RepLain2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLain2.aspx.designer.cs">
+      <DependentUpon>RepLain2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepAkumulasiRealisasiPenyaluranDana.aspx.cs">
+      <DependentUpon>RepAkumulasiRealisasiPenyaluranDana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepAkumulasiRealisasiPenyaluranDana.aspx.designer.cs">
+      <DependentUpon>RepAkumulasiRealisasiPenyaluranDana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepAlokasiPenyisihanLaba.aspx.cs">
+      <DependentUpon>RepAlokasiPenyisihanLaba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepAlokasiPenyisihanLaba.aspx.designer.cs">
+      <DependentUpon>RepAlokasiPenyisihanLaba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepDaftarAktivaDanPenyusutan.aspx.cs">
+      <DependentUpon>RepDaftarAktivaDanPenyusutan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepDaftarAktivaDanPenyusutan.aspx.designer.cs">
+      <DependentUpon>RepDaftarAktivaDanPenyusutan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepJurnalDetail.aspx.cs">
+      <DependentUpon>RepJurnalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepJurnalDetail.aspx.designer.cs">
+      <DependentUpon>RepJurnalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepKonfirmasiPiutang.aspx.cs">
+      <DependentUpon>RepKonfirmasiPiutang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepKonfirmasiPiutang.aspx.designer.cs">
+      <DependentUpon>RepKonfirmasiPiutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepLihatDetailJurnal.aspx.cs">
+      <DependentUpon>RepLihatDetailJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepLihatDetailJurnal.aspx.designer.cs">
+      <DependentUpon>RepLihatDetailJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepRealisasiDanaProgramKemitraan.aspx.cs">
+      <DependentUpon>RepRealisasiDanaProgramKemitraan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepRealisasiDanaProgramKemitraan.aspx.designer.cs">
+      <DependentUpon>RepRealisasiDanaProgramKemitraan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepUsulanPenyaluran.aspx.cs">
+      <DependentUpon>RepUsulanPenyaluran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepLainLain\RepUsulanPenyaluran.aspx.designer.cs">
+      <DependentUpon>RepUsulanPenyaluran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepPenyisihanPiu.aspx.cs">
+      <DependentUpon>RepPenyisihanPiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepPenyisihanPiu.aspx.designer.cs">
+      <DependentUpon>RepPenyisihanPiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepBUMN.aspx.cs">
+      <DependentUpon>RepBUMN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepBUMN.aspx.designer.cs">
+      <DependentUpon>RepBUMN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraaan.aspx.cs">
+      <DependentUpon>RepKemitraaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepKemitraaan.aspx.designer.cs">
+      <DependentUpon>RepKemitraaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansii.aspx.cs">
+      <DependentUpon>RepAkuntansii.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\RepAkuntansii.aspx.designer.cs">
+      <DependentUpon>RepAkuntansii.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\AnalisisData.aspx.cs">
+      <DependentUpon>AnalisisData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\AnalisisData.aspx.designer.cs">
+      <DependentUpon>AnalisisData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Content Include="scripts\db\query01.sql" />
+    <Compile Include="RoleCheck.cs" />
+    <Compile Include="Service References\wcf_auth\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wcf_domain_list\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akuntansi\AccIndex.aspx.cs">
+      <DependentUpon>AccIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akuntansi\AccIndex.aspx.designer.cs">
+      <DependentUpon>AccIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\CityIndex.aspx.cs">
+      <DependentUpon>CityIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\CityIndex.aspx.designer.cs">
+      <DependentUpon>CityIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\Verifikator.aspx.cs">
+      <DependentUpon>Verifikator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\Verifikator.aspx.designer.cs">
+      <DependentUpon>Verifikator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administer\KartuMBBermasalah.aspx.cs">
+      <DependentUpon>KartuMBBermasalah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administer\KartuMBBermasalah.aspx.designer.cs">
+      <DependentUpon>KartuMBBermasalah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reporting\RepBinaLingRealisasi.resx">
+      <DependentUpon>RepBinaLingRealisasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\RepBinaLingUsulan.resx">
+      <DependentUpon>RepBinaLingUsulan.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pertamina.PKBL.BLL\Pertamina.PKBL.BLL.csproj">
+      <Project>{8b61b6dc-1798-43f4-a27a-fe8eea887737}</Project>
+      <Name>Pertamina.PKBL.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BinaLingk\UploadedFile\" />
+    <Folder Include="UploadedXls\RealisasiKemitraan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wcf_auth\" />
+    <WCFMetadataStorage Include="Service References\wcf_domain_list\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10997</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13037/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

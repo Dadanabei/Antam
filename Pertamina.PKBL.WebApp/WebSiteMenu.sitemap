@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode url="Default.aspx" title="Home"  description="Home" />
+    <siteMapNode url="Account\Login.aspx" description="Login"></siteMapNode>
+    
+    <siteMapNode url="WebForm1.aspx" title="Admin"  description="">
+      <siteMapNode url="BinaLingk\MasterBL.aspx" title="Jenis Bina Lingkungan"></siteMapNode>
+      <siteMapNode url="Kemitraan\MasterKreditKemitraan.aspx" title="Jenis Kredit Kemitraan"></siteMapNode>
+      <siteMapNode url="Administer\MasterKantorCabang.aspx" title="Kantor Cabang"></siteMapNode>
+      <siteMapNode url="Administer\CityIndex.aspx" title="Kota/Kabupaten"></siteMapNode>
+      <siteMapNode url="Administer\ProvinceIndex.aspx" title="Provinsi"></siteMapNode>
+      <siteMapNode url="Kemitraan\MasterSektorKemitraan.aspx" title="Sektor Kemitraan"></siteMapNode>
+      <siteMapNode url="Administer\Verifikator.aspx" title="Verifikator"></siteMapNode>
+      <siteMapNode url="Administer\ClosingMonth.aspx" title="Closing Month"></siteMapNode>
+    </siteMapNode>
+    
+    <siteMapNode url="#" title="Akuntansi"  description="">
+      <siteMapNode url="Akuntansi\AccIndex.aspx" title="Nomor Akuntansi"></siteMapNode>
+      <siteMapNode url="Akuntansi\MappingBankCoa.aspx" title="Mapping Bank-COA"></siteMapNode>
+      <siteMapNode url="Akuntansi\MappingCabangProvinsi.aspx" title="Mapping Cabang-Provinsi"></siteMapNode>
+      <siteMapNode url="Akuntansi\MappingCoaJenisBinaling.aspx" title="Mapping COA-Jenis Binaling"></siteMapNode>
+      <siteMapNode url="Akuntansi\MappingKotaAc.aspx" title="Mapping Kota-AC"></siteMapNode>
+      <siteMapNode url="Akuntansi\PenyaluranBL.aspx" title="Penyaluran Bina Lingkungan"></siteMapNode>
+      <siteMapNode url="Akuntansi\PencairanPK.aspx" title="Pencairan Program Kemitraan">
+        <siteMapNode url="Akuntansi\Detail_PencairanPK.aspx" title="Detail"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Akuntansi\PembayaranPK.aspx" title="Pembayaran Program Kemitraan">
+        <siteMapNode url="Akuntansi\DetailPembayaranPK.aspx" title="Detail"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Akuntansi\Kartu_Piutang.aspx" title="Kartu Piutang">
+        <siteMapNode url="Akuntansi\Detail_Kartu_Piutang.aspx" title="Detail"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Akuntansi\DiskonJasa.aspx" title="Diskon Jasa">
+        <siteMapNode url="Akuntansi\DetailDiskonJasa.aspx" title="Detail"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Akuntansi\TransaksiKasBank.aspx" title="Jurnal Transaksi Kas Bank"></siteMapNode>
+      <siteMapNode url="Akuntansi\JurnalUmum.aspx" title="Jurnal Umum"></siteMapNode>
+      <siteMapNode url="Akuntansi\Adjustment.aspx" title="Jurnal Adjustment"></siteMapNode>
+      <siteMapNode url="Akuntansi\PostingJurnal.aspx" title="Posting Jurnal"></siteMapNode>
+      <siteMapNode url="Akuntansi\TransferDanaBank.aspx" title="Transfer Dana Bank"></siteMapNode>
+      <siteMapNode url="#1" title="Daftar Pengakuan">
+        <siteMapNode url="Akuntansi\MitraBinaanBermasalah.aspx" title="Mitra Binaan Bermasalah"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="#2" title="Panjar">
+        <siteMapNode url="Akuntansi\Lihatpanjar.aspx" title="Daftar Panjar">
+          <siteMapNode url="Akuntansi\PanjarIndex.aspx" title="Detail Panjar"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="Akuntansi\PerwabPanjar.aspx" title="Perwab Panjar">
+          <siteMapNode url="Akuntansi\DetailPerwabPanjar.aspx" title="Detail Perwab"></siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Akuntansi\AktivaTetap.aspx" title="Aktiva Tetap"></siteMapNode>
+      <siteMapNode url="Akuntansi\PengembalianKelebihan.aspx" title="Pengembalian Kelebihan">
+        <siteMapNode url="Akuntansi\DetailPengembalianKelebihan.aspx" title="Detail"></siteMapNode>
+      </siteMapNode>
+
+    </siteMapNode>
+
+    <siteMapNode url="##" title="Bina Lingkungan"  description="">
+      <siteMapNode url="BinaLingk\PermohonanBL.aspx" title="Permohonan">
+        <siteMapNode url="BinaLingk\CheckList.aspx" title="Checklist"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="BinaLingk\PenilaianBL.aspx" title="Penilaian"></siteMapNode>
+      <siteMapNode url="BinaLingk\PersetujuanBL.aspx" title="Persetujuan"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="####" title="Program Kemitraan"  description="">
+      <siteMapNode url="Kemitraan\PenerimaanProposal.aspx" title="Penerimaan Proposal">
+        <siteMapNode url="Kemitraan\DetailPenerimaanProposal.aspx" title="Detail Penerimaan Proposal"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="#####" title="Survey">
+        <siteMapNode url="Kemitraan\PenilaianSurvey.aspx" title="Penilaian">
+          <siteMapNode url="Kemitraan\DetailPenilaianSurvey.aspx" title="Detail Penilaian"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="Kemitraan\PersetujuanSurvey.aspx" title="Persetujuan">
+          <siteMapNode url="Kemitraan\DetailPersetujuanSurvey.aspx" title="Detail Persetujuan"></siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Kemitraan\RealisasiKemitraan.aspx" title="Realisasi">
+        <siteMapNode url="Kemitraan\RealisasiPersetujuanTambah.aspx" title="Detail Realisasi Persetujuan"></siteMapNode>
+        <siteMapNode url="Kemitraan\RealisasiListAkadDetail.aspx" title="Detail Akad Kredit"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Kemitraan\JadwalPembayaran.aspx" title="Jadwal Pembayaran">
+        <siteMapNode url="Kemitraan\DetailJadwalPembayaran.aspx" title="Detail Jadwal Pembayaran"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Kemitraan\ReschedulePiutangKemitraan.aspx" title="Reschedule Piutang"></siteMapNode>
+      <siteMapNode url="Kemitraan\PerhitunganBungaPinjaman.aspx" title="Perhitungan Bunga Pinjaman"></siteMapNode>
+      <siteMapNode url="Kemitraan/SinergiBUMN.aspx" title="Sinergi BUMN"></siteMapNode>
+      <siteMapNode url="Kemitraan/MonitoringMitra.aspx" title="Monitoring Mitra">
+        <siteMapNode url="Kemitraan/TambahMonitoringMitra.aspx" title="Tambah"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="###" title="Reporting" description="">
+      <siteMapNode url="Reporting\RepKemitraaan.aspx" title="Kemitraan">
+        <siteMapNode url="Reporting\RepKemitraanDetail\RepUsulanPemohonProgramKemitraan.aspx" title="Laporan Usulan Pemohon Program Kemitraan"></siteMapNode>
+        <siteMapNode url="Reporting\RepKemitraanDetail\RepRealisasiProgramKemitraan.aspx" title="Laporan Realisasi Program kemitraan"></siteMapNode>
+        <siteMapNode url="Reporting\RepKemitraanDetail\RepPerkembanganPinjamanMitraBinaan.aspx" title="Laporan Perkembangan Pinjaman Mitra Binaan"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Reporting\RepBinaLingk.aspx" title="Bina Lingkungan"></siteMapNode>
+      <siteMapNode url="Reporting\RepAkuntansii.aspx" title="Akuntansi">
+        <siteMapNode url="Reporting\RepAkuntansUserControl\RepBaganAkun.aspx" title="Bagan Akun">
+          <siteMapNode url="Reporting\RepAkuntansUserControl\DetailRepBaganAkun.aspx" title="Detail"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="Reporting\RepAkuntansUserControl\RepNeracaSaldo.aspx" title="Neraca Saldo"></siteMapNode>
+        <siteMapNode url="Reporting\RepLainLain\RepJurnalDetail.aspx" title="Daftar Jurnal Detail"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+  
+</siteMap>

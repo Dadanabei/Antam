@@ -1,0 +1,121 @@
+﻿.foo
+{
+}
+/* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+ 
+div#page-error-header
+{
+	position: relative;
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 10px 14px;
+}
+.page-error-header-icon
+{
+	width: 30px;
+	height: 28px;
+	background: url(images/master-sprite.png);
+	position: absolute; /*display: inline-block;*/
+	top:5px;
+}
+.icon-exception
+{
+	background-position: -245px -232px;
+}
+.icon-404
+{
+	background-position: -277px -232px;
+}
+
+.page-error-header-title
+{
+	padding: 0 0 0 30px;
+}
+.page-error-header-title h1,.page-error-header-title h2
+{
+	margin-left: 8px;
+}
+.page-error-header-title h1
+{
+	font-family: Verdana;
+	color: #696969;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.page-error-header-title h2
+{
+	font-family: georgia;
+	font-size: 10pt;
+	color: Gray;
+	font-style: italic;
+}
+
+/* TOOLBOX */
+div#toolbox a
+{
+	width: 17px;
+	height: 15px;
+	background: url(images/master-sprite.png);
+	position: absolute; /*display: inline-block;*/
+	margin-right: 16px;
+}
+div#toolbox a
+{
+	top: 7px;
+	position: absolute;
+	outline: 0;
+	display: inline-block;
+	padding: 18px 0 0 0;
+	height: 0px !important;
+	cursor: pointer;
+}
+div#toolbox a.back
+{
+	right: -5px;
+	background-position: -85px -210px;
+	height: /**/ 15px;
+	width: /**/ 18px;
+}
+div#toolbox a.email
+{
+	right: 35px;
+	background-position: -104px -210px;
+	height: /**/ 15px;
+	width: /**/ 18px;
+}
+div#toolbox a.save
+{
+	right: 15px;
+	background-position: -123px -210px;
+	height: /**/ 15px;
+	width: /**/ 18px;
+}
+
+/*  CONTENT BOX  */
+div.panel-content .page-error-detail
+{
+	clear: both;
+	margin: 10px 20px;
+	padding : 6px 4px;
+	background-color: #F7CBCA;
+	border-left-color: #CC0000;
+	border-left-style: solid;
+	border-left-width: 14px;
+	color: #CC0000;
+}
+div.panel-content p
+{
+	clear: both;
+	color: #CC0000;
+	font-size: 2.5em;
+}
+.page-error-detail span
+{
+	font-weight: normal;
+	font-size: 8pt;
+	display: block;
+	clear: both;
+	padding-left:10px;
+}

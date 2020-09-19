@@ -1,0 +1,153 @@
+﻿/* form.css */
+
+fieldset
+{
+	clear: both;
+	margin: 0 0 0 0;
+	border-color: gray;
+	border-width: 1px 0 0 0;
+	border-style: solid none none none;
+	padding: 10px;
+}
+fieldset legend
+{
+	line-height: 150%;
+}
+fieldset legend
+{
+	font-size: 150%;
+	font-weight: Bold;
+	margin: -4px 0 0 0;
+	padding: 0 8px;
+	color: gray;
+}
+
+fieldset ol
+{
+	float: left;
+	width: auto !important;
+	width: auto;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+}
+fieldset li.form
+{
+	padding: 2px 4px;
+	clear: both;
+}
+fieldset li.form a
+{
+	vertical-align: top;
+}
+/*fieldset label
+{
+	float: left;
+	text-align: right;
+	margin-right: 7px;
+	line-height: 19px;
+}*/
+fieldset span
+{
+	line-height: 19px;
+}
+fieldset input[type="text"], fieldset textarea
+{
+	padding: 2px;
+	border: 1px solid #a9a9a9;
+}
+fieldset li > div
+{
+	float: left;
+}
+fieldset > div.form-wrapper
+{
+	padding: 10px 0;
+}
+fieldset div.form-toolbox
+{
+	clear: both;
+}
+
+fieldset table.form
+{
+	margin: 8px 10px 2px 10px;
+	border-collapse: collapse;
+	table-layout: auto;
+	width: 100%;
+	float: left;
+	display: table;
+}
+fieldset table.form tr td
+{
+	vertical-align: top;
+	line-height: 19px;
+	padding: 2px 4px;
+}
+table.form tr td:first-child
+{
+	text-align: right;
+}
+table.form tr td:first-child label
+{
+	line-height: 19px;
+	margin-right: 7px;
+}
+table.form tr td a
+{
+	vertical-align: top;
+}
+table.form td.title, table.form tr td.title:first-child
+{
+	text-align: left;
+	padding: 20px 4px 0 4px;
+	font-size: 10pt;
+	font-weight: Bold;
+}
+span.total
+{
+	letter-spacing:.1em;
+	text-align: right;
+	display: block;
+	color: #3399FF;
+	font-weight:bold;
+	font-size:16px;
+}
+span.sub-total
+{
+	letter-spacing:.1em;
+	text-align: right;
+	display: block;
+	color: #678197;
+	font-weight:bold;
+	font-size:12px;
+}
+.panel-ptmn-green table.form td.title, table.form td.title .ptmn-green
+{
+	color: #99CC00;
+}
+.panel-ptmn-red table.form td.title, table.form td.title .ptmn-red
+{
+	color: #CC3300;
+}
+.panel-ptmn-blue table.form td.title, table.form td.title .ptmn-blue
+{
+	color: #3399FF;
+}
+table.form td.form-toolbar
+{
+	padding: 15px 4px;
+}
+
+.lblTitle
+{
+    padding-left:10px;
+    padding-right:5px;
+    padding-top: 5px;
+    font-size:12px;
+    font-weight:bold;
+    font-family:sans-serif;
+    color: #111111;
+	text-indent: 8px;
+}
+

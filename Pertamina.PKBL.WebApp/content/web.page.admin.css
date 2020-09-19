@@ -1,0 +1,8 @@
+﻿
+div#admin-navigation
+{
+	display: block;
+	clear: both;
+	float: left;
+	width: 230px;
+}

@@ -1,0 +1,27 @@
+table
+[dbo].[MST_BINALING](requestor_city_id)
+mapping_kota_ac
+data_usaha mitra
+penjamin_mitra(city)
+tblt_binalng (requestor_city_id)
+tblt_kemitraan proposal(requestor_city_id)
+
+
+sp
+[dbo].[SP_GetPenyaluranBL] (requestor_city_id)
+[dbo].[USP_BINALING_PERMOHONAN_INSERT](requestor_city_id)
+[dbo].[USP_BINALING_PERMOHONAN_UPDATE](requestor_city_id)
+[dbo].[USP_BINALING_PERSETUJUAN_SELECT] requestor_city_id)
+[dbo].[USP_KEMITRAAN_ENTRI_DATA_PENJAMIN](city)
+[dbo].[USP_KEMITRAAN_ENTRI_DATA_USAHA](company_city_id)
+[dbo].[USP_KEMITRAAN_INSERT_PENERIMAAN_PROPOSAL](requestor_city_id)
+[dbo].[USP_KEMITRAAN_SELECT_DATA_PENJAMIN] (city)
+[dbo].[USP_KEMITRAAN_SELECT_DATA_USAHA](company_city_id)
+[dbo].[USP_KOTA_KABUPATEN_INSERT](city_name)
+[dbo].[USP_KOTA_KABUPATEN_UPDATE](city_name)
+[dbo].[USP_MAPPING_KOTA_AC_INSERT](city_id)
+[dbo].[USP_MAPPING_KOTA_AC_UPDATE](city_id)
+
+
+
+

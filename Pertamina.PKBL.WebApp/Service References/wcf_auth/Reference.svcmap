@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e49438e8-640e-4ae6-983e-518c73c15861" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuthenticateUser.wsdl" MetadataType="Wsdl" ID="dd1b2d8b-37a1-4404-8e95-c53af8158a5c" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?wsdl" />
+    <MetadataFile FileName="AuthenticateUser.xsd" MetadataType="Schema" ID="9292db7f-5fbb-4090-8ceb-eb67eace984e" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd2" />
+    <MetadataFile FileName="AuthenticateUser1.xsd" MetadataType="Schema" ID="61d92790-3060-427a-8b5b-f19e2f695085" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd3" />
+    <MetadataFile FileName="AuthenticateUser2.xsd" MetadataType="Schema" ID="a17f546e-dbf2-4baf-96f7-1ae574b26178" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd0" />
+    <MetadataFile FileName="AuthenticateUser3.xsd" MetadataType="Schema" ID="063e9daf-ce6b-4123-9e54-47ab74c7846b" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticateUser.disco" MetadataType="Disco" ID="93d9e6fe-dd4d-441e-9d42-e6c6ea19b4e8" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?disco" />
+    <MetadataFile FileName="AuthenticateUser4.xsd" MetadataType="Schema" ID="7206fa11-85a3-4c40-aded-8cdde4b9beaa" SourceId="1" SourceUrl="https://ptmkpdevdad.pertamina.com:444/WCFUserManagement/AuthenticateUser.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
